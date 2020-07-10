@@ -20,5 +20,10 @@
             android:id="@+id/estaciones"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Estaciones" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Salir" />
     </group>
 </menu>
