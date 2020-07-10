@@ -22,4 +22,9 @@
         android:name="com.example.gasapp.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/estaciones"
+        android:name="com.example.gasapp.Estaciones"
+        android:label="fragment_estaciones"
+        tools:layout="@layout/fragment_estaciones" />
 </navigation>
