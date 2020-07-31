@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones">
+        <item><String>[m<sup>2</sup>]</String></item>
+        <item><String>[L]</String></item>
+
+    </string-array>
+</resources>

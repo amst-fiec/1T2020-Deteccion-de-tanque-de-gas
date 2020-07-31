@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.example.gasapp",
+  "applicationId": "com.example.oxygen",
   "variantType": "BASE_APK",
   "elements": [
     {
@@ -19,9 +19,9 @@
       },
       "path": "AndroidManifest.xml",
       "properties": {
-        "packageId": "com.example.gasapp",
+        "packageId": "com.example.oxygen",
         "split": "",
-        "minSdkVersion": "14"
+        "minSdkVersion": "16"
       }
     }
   ]

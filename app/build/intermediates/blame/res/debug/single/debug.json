@@ -1,174 +1,434 @@
 [
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_subject_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_subject_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_g_logo.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\drawable-xxhdpi\\ic_g_logo.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_boton_redondo.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable-v24\\boton_redondo.xml"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_face_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_face_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_estaciones.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\layout\\fragment_estaciones.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_location_on_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_location_on_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_slideshow.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\layout\\fragment_slideshow.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_face_24.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_face_24.xml"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_one.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable\\gradient_one.xml"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logo.jpeg.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable-v24\\logo.jpeg"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_g_logo.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_g_logo.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_add_circle_outline_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_add_circle_outline_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\menu\\main.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_g_logo.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\drawable-mdpi\\ic_g_logo.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_location_on_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_location_on_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_add_circle_outline_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_add_circle_outline_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_gallery.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_subject_24.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_subject_24.xml"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_g_logo.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_g_logo.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_add_circle_outline_24.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_add_circle_outline_24.xml"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_subject_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_subject_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_g_logo.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\drawable-xhdpi\\ic_g_logo.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_add_circle_outline_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_add_circle_outline_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_description_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_description_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_main.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\layout\\content_main.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_location_on_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_location_on_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_slideshow.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_name.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_gallery.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\layout\\fragment_gallery.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_square_foot_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_square_foot_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_name2.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_name2.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_subject_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_subject_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_square_foot_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_square_foot_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_main.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_group_work_24.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_group_work_24.xml"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner_item_unidad.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\layout\\spinner_item_unidad.xml"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_group_work_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_group_work_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_add_circle_outline_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_add_circle_outline_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_g_logo.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_g_logo.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_square_foot_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_square_foot_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_subject_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_subject_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tanques.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable\\tanques.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_square_foot_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_square_foot_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_group_work_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_group_work_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_blur_on_24.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_blur_on_24.xml"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_main_drawer.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_camera.xml.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_group_work_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_group_work_24.png"
     },
     {
-        "merged": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_g_logo.png.flat",
-        "source": "C:\\Users\\Jorge Pinargote\\Desktop\\AMST\\PROYECTO TANQUES DE GAS\\Repositorio\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\drawable-hdpi\\ic_g_logo.png"
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_group_work_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_group_work_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_description_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_description_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_estacion.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\layout\\layout_estacion.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_images.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable\\images.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_face_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_face_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_medium.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\font\\poppins_medium.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_animation_background.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable\\animation_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable-mdpi\\ic_action_name.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_face_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_face_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_estacions.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\layout\\fragment_estacions.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_blur_on_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_blur_on_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_name2.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable-mdpi\\ic_action_name2.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_face_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_face_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_add_circle_outline_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_add_circle_outline_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_square_foot_24.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_square_foot_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable-hdpi\\ic_action_name.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fondo_estaciones.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable\\fondo_estaciones.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_group_work_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_group_work_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_description_24.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_description_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_location_on_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_location_on_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_location_on_24.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_location_on_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_blur_on_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_blur_on_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_navigation.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\menu\\bottom_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_face_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_face_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_blur_on_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_blur_on_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_pie.jpg.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable-v24\\pie.jpg"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_name.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_style_spinner.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable\\style_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_blur_on_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_blur_on_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_two.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable\\gradient_two.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_location_on_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_location_on_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_description_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_description_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_subject_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_subject_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_anaditanque.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable\\anaditanque.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_name2.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_name2.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_location_on_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_location_on_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_square_foot_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_square_foot_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_fondo_informacion.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable-v24\\fondo_informacion.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_description_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_description_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_principal.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\layout\\activity_principal.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_group_work_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_group_work_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_usuarioicono.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable\\usuarioicono.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_subject_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_subject_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\font\\poppins.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_blur_on_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_blur_on_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_agregar_estacion.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\layout\\fragment_agregar_estacion.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_face_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_face_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_plomo.xml.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable\\btn_plomo.xml"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_name2.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable-hdpi\\ic_action_name2.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_description_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_description_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_add_circle_outline_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_add_circle_outline_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_description_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_description_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_micuenta.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\src\\main\\res\\drawable\\micuenta.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_square_foot_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_square_foot_24.png"
+    },
+    {
+        "merged": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_blur_on_24.png.flat",
+        "source": "C:\\Users\\eliza\\Desktop\\Oxygen2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_blur_on_24.png"
     }
 ]

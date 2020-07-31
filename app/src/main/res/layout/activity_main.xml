@@ -1,24 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
+    android:id="@+id/contenedor_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:openDrawer="start">
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
 
-    <include
-        layout="@layout/app_bar_main"
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/divider2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btn_iniciarsesion"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/divider2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/boton_redondo"
+        android:fontFamily="@font/poppins_medium"
+        android:onClick="iniciarsesion"
+        android:text="@string/iniciarsesion"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/divider2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible" />
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_main"
-        app:menu="@menu/activity_main_drawer" />
-</androidx.drawerlayout.widget.DrawerLayout>
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:fontFamily="@font/poppins"
+        android:text="Desarrollado por K. Lopez, E. Martinez y J. Pinargote"
+        android:textSize="12sp" /><![CDATA[
+
+
+
+
+
+
+
+
+
+    >
+
+
+
+
+]]>
+</RelativeLayout>

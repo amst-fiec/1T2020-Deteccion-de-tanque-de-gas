@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:id="@+id/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo_estaciones">
+
+        <TextView
+            android:id="@+id/descripcion_estacion"
+            android:layout_width="275dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/titulo_estacion"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_toStartOf="@+id/pcv_oxigeno"
+            android:layout_toLeftOf="@+id/pcv_oxigeno"
+            android:fontFamily="@font/poppins"
+            android:text="Aquí va la descripción del tanque"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/titulo_estacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Estación 1"
+            android:textColor="#3A3939"
+            android:textSize="16sp" />
+
+        <com.ramijemli.percentagechartview.PercentageChartView
+            android:id="@+id/pcv_oxigeno"
+            android:layout_width="66dp"
+            android:layout_height="70dp"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:pcv_animDuration="800"
+
+            app:pcv_animInterpolator="anticipate_overshoot"
+            app:pcv_backgroundBarColor="#CCCCCC"
+            app:pcv_backgroundBarThickness="6dp"
+            app:pcv_mode="ring"
+            app:pcv_orientation="counter_clockwise"
+            app:pcv_progress="75"
+            app:pcv_progressBarThickness="10dp"
+            app:pcv_startAngle="90" />
+
+        <TextView
+            android:id="@+id/porcentaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:fontFamily="@font/poppins"
+            android:text="75%" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
