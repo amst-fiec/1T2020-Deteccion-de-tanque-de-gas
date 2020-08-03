@@ -49,7 +49,7 @@ public class EstacionsFragment extends Fragment {
         TextView txt = new TextView(getActivity()); //Textview para generar un espacio entre los elementos del linearLayout):
         linearLayout.addView(txt);
 
-
+        /*
         //añadir layout warning------------------------------------------------------------------------------------
         RelativeLayout relativeLayout2 = (RelativeLayout)inflater.inflate(id,null,false);
         //asignacion fondo intermitente
@@ -73,7 +73,7 @@ public class EstacionsFragment extends Fragment {
         TextView txt3 = new TextView(getActivity());
         linearLayout.addView(txt3);
 
-
+    */
         return v;
     }
 

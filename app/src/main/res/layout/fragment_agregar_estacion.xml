@@ -41,7 +41,9 @@
         android:hint="@string/nombre"
         android:inputType="textPersonName"
         android:maxLength="15"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/ic_baseline_blur_on_24" />
 
     <EditText
         android:id="@+id/txt_name_estacion2"
@@ -65,7 +67,9 @@
         android:hint="@string/btn_agregarUbicacion"
         android:inputType="textPersonName"
         android:maxLength="15"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:importantForAutofill="no"
+        android:drawableStart="@drawable/ic_baseline_location_on_24" />
 
     <EditText
         android:id="@+id/txt_name_estacion3"
@@ -89,7 +93,9 @@
         android:hint="@string/volumen"
         android:inputType="numberDecimal"
         android:maxLength="15"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/ic_baseline_group_work_24" />
 
     <RelativeLayout
         android:id="@+id/contenedor_descipcion"
@@ -119,7 +125,9 @@
             android:maxLines="4"
             android:paddingLeft="20dp"
             android:paddingTop="5dp"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:autofillHints=""
+            android:paddingStart="20dp" />
 
     </RelativeLayout>
 
@@ -191,6 +199,7 @@
         android:layout_toEndOf="@+id/divider"
         android:layout_toRightOf="@+id/divider"
         android:background="@drawable/style_spinner"
-        android:paddingLeft="15dp" />
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp" />
 
 </RelativeLayout>

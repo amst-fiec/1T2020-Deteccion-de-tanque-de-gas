@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "278500210784",
+    "firebase_url": "https://oxygen-46efa.firebaseio.com",
+    "project_id": "oxygen-46efa",
+    "storage_bucket": "oxygen-46efa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278500210784:android:b8900a9c66f2d178212b05",
+        "android_client_info": {
+          "package_name": "com.example.oxygen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278500210784-utdpc5uafn6f99ti422gs87021uosnb5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.oxygen",
+            "certificate_hash": "cff17b481888423ed1b3577ed0390cffd9991829"
+          }
+        },
+        {
+          "client_id": "278500210784-mpum3195viq477ptvbn1e3bbd376kh5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwIbNAfSGxgXB3op4y8sftZPqKik2KGlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278500210784-mpum3195viq477ptvbn1e3bbd376kh5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

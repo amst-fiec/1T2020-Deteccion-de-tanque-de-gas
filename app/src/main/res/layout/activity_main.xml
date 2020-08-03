@@ -15,7 +15,8 @@
         android:layout_above="@+id/divider2"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/todo" />
 
     <Button
         android:id="@+id/btn_iniciarsesion"
@@ -47,7 +48,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="33dp"
         android:fontFamily="@font/poppins"
-        android:text="Desarrollado por K. Lopez, E. Martinez y J. Pinargote"
+        android:text="@string/desarrollado_por_k_lopez_e_martinez_y_j_pinargote"
         android:textSize="12sp" /><![CDATA[
 
 
