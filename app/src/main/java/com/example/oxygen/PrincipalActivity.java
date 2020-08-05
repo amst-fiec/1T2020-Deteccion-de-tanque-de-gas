@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.oxygen.Fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class PrincipalActivity extends AppCompatActivity {
@@ -54,7 +55,7 @@ public class PrincipalActivity extends AppCompatActivity {
                             selectedFragment = new AgregarEstacionFragment();
                             break;
                         case R.id.nav_cuenta:
-                            selectedFragment = new EstacionsFragment();
+                            selectedFragment = new ProfileFragment();
                             break;
 
                     }

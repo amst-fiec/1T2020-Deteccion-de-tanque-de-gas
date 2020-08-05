@@ -96,6 +96,10 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Proyecto/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-ldpi/ic_baseline_description_24.png"
     },
     {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Proyecto/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/layout_fragment_profile.xml.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Proyecto/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/layout/fragment_profile.xml"
+    },
+    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Proyecto/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_baseline_add_circle_outline_24.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Proyecto/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_baseline_add_circle_outline_24.png"
     },

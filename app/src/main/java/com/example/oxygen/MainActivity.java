@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.oxygen.Fragments.ProfileFragment;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -34,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iniciarParametros();
+
+
+    }
+
+    private void cerrarSesion(){
+        mGoogleSignInClient.signOut().addOnCompleteListener(this, task -> updateUI(null));
     }
 
 
@@ -86,9 +93,11 @@ public class MainActivity extends AppCompatActivity {
             info_user.put("user_photo",String.valueOf(user.getPhotoUrl()));
             info_user.put("user_id",user.getUid());
             finish();
-            Intent intent = new Intent(this, PrincipalActivity.class);
-            intent.putExtra("info_user",info_user);
-            startActivity(intent);
+            Intent intentPro = new Intent(this, PrincipalActivity.class);
+            intentPro.putExtra("info_user",info_user);
+            //Intent intent = new Intent(this,EstacionsFragment.class);
+            startActivity(intentPro);
+
 
         }else{
             System.out.println("sin registrarse");
@@ -108,6 +117,16 @@ public class MainActivity extends AppCompatActivity {
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this,gso);
         btn_login = findViewById(R.id.btn_iniciarsesion);
+
+        Intent i = getIntent();
+        String msg = i.getStringExtra("msg");
+        if(msg != null){
+            if(msg.equals("cerrarSesion")){
+                cerrarSesion();
+            }
+        }
+
+
     }
 
 

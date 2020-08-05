@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1384643160/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0-Oxygen.iml" filepath="$PROJECT_DIR$/.idea/modules/-1384643160/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0-Oxygen.iml" group="Oxygen" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1384643160/Oxygen.iml" filepath="$PROJECT_DIR$/.idea/modules/-1384643160/Oxygen.iml" group="Oxygen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Oxygen-app.iml" filepath="$PROJECT_DIR$/.idea/modules/Oxygen-app.iml" group="Oxygen/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app.iml" group="Oxygen/app" />
     </modules>
   </component>

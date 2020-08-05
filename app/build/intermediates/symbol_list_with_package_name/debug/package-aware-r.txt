@@ -1563,6 +1563,7 @@ id bold
 id bottom
 id botton_menu
 id bounce
+id btn_CerrarS
 id btn_agregarEstacion
 id btn_iniciarsesion
 id buttonPanel
@@ -1634,6 +1635,7 @@ id fixed
 id fondo
 id forever
 id fragment_estaciones
+id frameLayout
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1916,6 +1918,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_agregar_estacion
 layout fragment_estacions
+layout fragment_profile
 layout layout_estacion
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
@@ -2013,6 +2016,7 @@ string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string btn_agregarEstacion
 string btn_agregarUbicacion
+string cerrar_sesion
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -2051,6 +2055,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string iniciarsesion
