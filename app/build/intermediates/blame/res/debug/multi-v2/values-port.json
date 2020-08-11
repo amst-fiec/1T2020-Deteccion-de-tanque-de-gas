@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Proyecto/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "outputFile": "C:\\Users\\eliza\\Desktop\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "/home/kevjlope/.gradle/caches/transforms-2/files-2.1/95c27f1e561f59170f577bf124144243/appcompat-1.1.0/res/values-port/values-port.xml",
+                    "source": "C:\\Users\\eliza\\.gradle\\caches\\transforms-2\\files-2.1\\95c27f1e561f59170f577bf124144243\\appcompat-1.1.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
