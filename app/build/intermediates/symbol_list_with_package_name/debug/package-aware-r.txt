@@ -1591,6 +1591,7 @@ id container
 id contenedor_agregarEstacion
 id contenedor_descipcion
 id contenedor_fragment
+id contenedor_infor_est
 id contenedor_main
 id contenedor_profile
 id content
@@ -1615,7 +1616,10 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id divider
 id divider2
+id divider3
+id divider4
 id dropdown_menu
 id edit_query
 id end
@@ -1651,6 +1655,7 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+id imageView
 id img_logo
 id imv_foto
 id info
@@ -1723,6 +1728,7 @@ id parentPanel
 id parent_matrix
 id password_toggle
 id pcv_oxigeno
+id pcv_oxigeno2
 id peekHeight
 id percent
 id pie
@@ -1804,6 +1810,15 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView10
+id textView13
+id textView14
+id textView18
+id textView20
+id textView21
+id textView3
+id textView5
+id textView9
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -1824,20 +1839,16 @@ id transition_scene_layoutid_cache
 id transition_transform
 id txt_alerta
 id txt_codigo
+id txt_decripcion
 id txt_descripcion
-<<<<<<< HEAD
 id txt_email
-=======
->>>>>>> 506fe9c33eea296f7e2badb463e47e0664b8fa54
 id txt_encabezado
 id txt_estacion
 id txt_indicacion
+id txt_nombreEstacion
 id txt_nombre_estacion
 id txt_ubicacion
-<<<<<<< HEAD
 id txt_user
-=======
->>>>>>> 506fe9c33eea296f7e2badb463e47e0664b8fa54
 id txt_volumen
 id unchecked
 id uniform
@@ -2073,6 +2084,7 @@ string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string infor_estacion
 string iniciarsesion
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
@@ -2109,11 +2121,13 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string nombre
+string nombre_estacion
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string porcentaje_volumen
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
