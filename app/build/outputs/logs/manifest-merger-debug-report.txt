@@ -13,6 +13,7 @@ MERGED from [com.google.firebase:firebase-analytics:17.4.3] /home/kevjlope/.grad
 MERGED from [com.google.firebase:firebase-auth:19.3.1] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/35d59384e5f94fa3a8b66cea2c1872ae/jetified-firebase-auth-19.3.1/AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.android.gms:play-services-auth:18.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/6d14325ed35863757137b9086d7822f7/jetified-play-services-auth-18.0.0/AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.firebase:firebase-database:19.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/bf093ef62ae3f4eb12724430eacf0523/jetified-firebase-database-19.1.0/AndroidManifest.xml:15:1-38:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/e10e46a291666cdbde943cf95956ef31/navigation-fragment-ktx-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/6b22d0aba6ac7befe42add84c9e45db8/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/40901ca6ce3fedd904480108591740da/jetified-firebase-auth-interop-19.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/bab0b69ae2d223356b7ef51658eea1cf/jetified-play-services-auth-api-phone-17.0.0/AndroidManifest.xml:2:1-7:12
@@ -34,6 +35,7 @@ MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/kevjlope/.
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/ea0822e5c23082939c8151c6d12b41e4/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/666b6c8915a3d95c6c9f90dc6df126d2/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:17.1.1] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/37f871a81691d44ae6fca0ee54feba60/jetified-play-services-basement-17.1.1/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/6e32dd1ec681d47ad2522fd3aa8ea51f/navigation-fragment-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/fb6910351ac629e45f230c56b7e8097a/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/a1fc0b2adf82a6164581ef54edf18c2a/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/92ce3a89a1e2e98c17f9b4d15e21ae72/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -43,6 +45,8 @@ MERGED from [androidx.transition:transition:1.2.0] /home/kevjlope/.gradle/caches
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/d65c7c0a7ba55a4857cf48f246bb8a5d/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/63dc7281b28d3984b9dea3e23b7efd26/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/f80ec6bddcb24f5d83a6bed26b6557a7/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/750e236e79d4b898de0ce362ae5f22af/navigation-runtime-ktx-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/6a79c2d01604de9fd196e4c424d0d73e/navigation-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/65dd1f61eb626c58708eaa75e35014ba/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/e89421607d3c369be15ff4fb75f4acad/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/d24ed17ccd340ddc444ab325a8c92316/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -52,6 +56,8 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/kevjlope/
 MERGED from [androidx.customview:customview:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/7ad6d3318b5b50a568488e704fd48ec9/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/9f789ae6a0f9922566789f67536acc11/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/0521ed752f30c1e81430672a57106ce1/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/1770c4a424edb35e7b5844e024834a3f/navigation-common-ktx-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/0bb265e5c4c542efa9de5854ee07d918/navigation-common-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/b2b51ad2129f7ae88186ad90508b79ab/core-1.1.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/23efeaea9ad0d45302c6f534d3b29411/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/c7b6252082af7c3db8c761dc5fc777cc/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -197,6 +203,8 @@ MERGED from [com.google.android.gms:play-services-auth:18.0.0] /home/kevjlope/.g
 MERGED from [com.google.android.gms:play-services-auth:18.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/6d14325ed35863757137b9086d7822f7/jetified-play-services-auth-18.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-database:19.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/bf093ef62ae3f4eb12724430eacf0523/jetified-firebase-database-19.1.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-database:19.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/bf093ef62ae3f4eb12724430eacf0523/jetified-firebase-database-19.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/e10e46a291666cdbde943cf95956ef31/navigation-fragment-ktx-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/e10e46a291666cdbde943cf95956ef31/navigation-fragment-ktx-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/6b22d0aba6ac7befe42add84c9e45db8/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/6b22d0aba6ac7befe42add84c9e45db8/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/40901ca6ce3fedd904480108591740da/jetified-firebase-auth-interop-19.0.0/AndroidManifest.xml:5:5-44
@@ -239,6 +247,8 @@ MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/k
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/666b6c8915a3d95c6c9f90dc6df126d2/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:17.1.1] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/37f871a81691d44ae6fca0ee54feba60/jetified-play-services-basement-17.1.1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:17.1.1] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/37f871a81691d44ae6fca0ee54feba60/jetified-play-services-basement-17.1.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/6e32dd1ec681d47ad2522fd3aa8ea51f/navigation-fragment-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/6e32dd1ec681d47ad2522fd3aa8ea51f/navigation-fragment-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/fb6910351ac629e45f230c56b7e8097a/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/fb6910351ac629e45f230c56b7e8097a/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/a1fc0b2adf82a6164581ef54edf18c2a/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -257,6 +267,10 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/kevjlope/.gradl
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/63dc7281b28d3984b9dea3e23b7efd26/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/f80ec6bddcb24f5d83a6bed26b6557a7/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/f80ec6bddcb24f5d83a6bed26b6557a7/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/750e236e79d4b898de0ce362ae5f22af/navigation-runtime-ktx-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/750e236e79d4b898de0ce362ae5f22af/navigation-runtime-ktx-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/6a79c2d01604de9fd196e4c424d0d73e/navigation-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/6a79c2d01604de9fd196e4c424d0d73e/navigation-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/65dd1f61eb626c58708eaa75e35014ba/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/65dd1f61eb626c58708eaa75e35014ba/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/e89421607d3c369be15ff4fb75f4acad/loader-1.0.0/AndroidManifest.xml:20:5-44
@@ -275,6 +289,10 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/kevjlop
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/9f789ae6a0f9922566789f67536acc11/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/0521ed752f30c1e81430672a57106ce1/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/0521ed752f30c1e81430672a57106ce1/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/1770c4a424edb35e7b5844e024834a3f/navigation-common-ktx-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/1770c4a424edb35e7b5844e024834a3f/navigation-common-ktx-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/0bb265e5c4c542efa9de5854ee07d918/navigation-common-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/0bb265e5c4c542efa9de5854ee07d918/navigation-common-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/b2b51ad2129f7ae88186ad90508b79ab/core-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.1.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/b2b51ad2129f7ae88186ad90508b79ab/core-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/kevjlope/.gradle/caches/transforms-2/files-2.1/23efeaea9ad0d45302c6f534d3b29411/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
