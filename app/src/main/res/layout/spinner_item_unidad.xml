@@ -2,6 +2,6 @@
 <TextView
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:textSize="14sp"
+    android:textSize="11sp"
     android:fontFamily="@font/poppins"
     xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -18,6 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f9c0aef-4f23-46f2-a0b5-c5e535f9dae0" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/oxygen/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -346,6 +347,14 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_infor_estacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_infor_estacion.xml" afterDir="false" />
+>>>>>>> 506fe9c33eea296f7e2badb463e47e0664b8fa54
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,9 +373,12 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+<<<<<<< HEAD
         <task path="$PROJECT_DIR$/app">
           <activation />
         </task>
+=======
+>>>>>>> 506fe9c33eea296f7e2badb463e47e0664b8fa54
         <projects_view>
           <tree_state>
             <expand>
@@ -385,6 +397,7 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="android" type="c8890929:TasksNode$1" />
               </path>
+<<<<<<< HEAD
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Oxygen" type="f1a62948:ProjectNode" />
@@ -402,6 +415,8 @@
                 <item name="app" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
+=======
+>>>>>>> 506fe9c33eea296f7e2badb463e47e0664b8fa54
             </expand>
             <select />
           </tree_state>
@@ -434,7 +449,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PREV/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -455,7 +470,7 @@
       <recent name="C:\Users\eliza\Desktop\Oxygen2\app\src\main\res\drawable" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -514,6 +529,30 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0 [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0 [signingReport]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -558,9 +597,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="119" key="Downloadable.Font.Dialog.Size/0.0.1366.728@0.0.1366.728" timestamp="1595195331279" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1595198828838">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1597210129058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+<<<<<<< HEAD
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595198828838" />
     <state width="1874" height="203" key="GridCell.Tab.0.bottom" timestamp="1597130851030">
       <screen x="0" y="27" width="1920" height="983" />
@@ -582,6 +622,25 @@
     </state>
     <state width="1323" height="135" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596181676000" />
     <state width="1874" height="203" key="GridCell.Tab.0.right/0.27.1920.983@0.27.1920.983" timestamp="1597130851030" />
+=======
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597210129058" />
+    <state width="1323" height="135" key="GridCell.Tab.0.bottom" timestamp="1597140592981">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="135" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597140592969" />
+    <state width="1323" height="135" key="GridCell.Tab.0.center" timestamp="1597140592895">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="135" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597140592895" />
+    <state width="1323" height="135" key="GridCell.Tab.0.left" timestamp="1597140592854">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="135" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597140592854" />
+    <state width="1323" height="135" key="GridCell.Tab.0.right" timestamp="1597140592909">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="135" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597140592909" />
+>>>>>>> 506fe9c33eea296f7e2badb463e47e0664b8fa54
     <state x="263" y="107" key="IDE.errors.dialog" timestamp="1595196662226">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -590,13 +649,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="499" y="142" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1595186592011" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1596177205055">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1597209795469">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+<<<<<<< HEAD
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596177205055" />
     <state x="1191" y="211" width="488" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597127217805">
       <screen x="0" y="27" width="1920" height="983" />
     </state>
     <state x="1191" y="211" width="488" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.983@0.27.1920.983" timestamp="1597127217805" />
+=======
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597209795469" />
+>>>>>>> 506fe9c33eea296f7e2badb463e47e0664b8fa54
   </component>
 </project>

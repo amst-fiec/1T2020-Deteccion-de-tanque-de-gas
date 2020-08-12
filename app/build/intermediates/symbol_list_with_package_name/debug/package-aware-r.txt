@@ -1825,13 +1825,19 @@ id transition_transform
 id txt_alerta
 id txt_codigo
 id txt_descripcion
+<<<<<<< HEAD
 id txt_email
+=======
+>>>>>>> 506fe9c33eea296f7e2badb463e47e0664b8fa54
 id txt_encabezado
 id txt_estacion
 id txt_indicacion
 id txt_nombre_estacion
 id txt_ubicacion
+<<<<<<< HEAD
 id txt_user
+=======
+>>>>>>> 506fe9c33eea296f7e2badb463e47e0664b8fa54
 id txt_volumen
 id unchecked
 id uniform
@@ -1925,6 +1931,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_agregar_estacion
 layout fragment_estacions
+layout fragment_infor_estacion
 layout fragment_profile
 layout layout_estacion
 layout mtrl_alert_dialog
