@@ -111,7 +111,7 @@
                     android:layout_weight="3"
                     android:fontFamily="@font/poppins"
                     android:paddingTop="10dp"
-                    android:paddingBottom="7dp"
+                    android:paddingBottom="10dp"
                     android:text="Esta es una breve descripción acerca de la estacion 1, descripción que puede tener un máximo de cuatro líneas" />
 
             </TableRow>
@@ -124,6 +124,8 @@
                     android:id="@+id/divider4"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
+                    android:layout_span="2"
+                    android:layout_weight="2"
                     android:background="?android:attr/listDivider" />
             </TableRow>
 
@@ -136,8 +138,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingTop="10dp"
-                    android:paddingRight="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
                     android:text="Volúmen inicial: " />
 
                 <TextView
@@ -145,9 +148,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
                     android:paddingTop="10dp"
                     android:paddingRight="10dp"
-                    android:text="TextView" />
+                    android:text="5 L" />
 
             </TableRow>
 
@@ -159,6 +163,7 @@
                     android:id="@+id/divider3"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
+                    android:layout_span="2"
                     android:background="?android:attr/listDivider" />
             </TableRow>
 
@@ -171,35 +176,21 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingTop="10dp"
-                    android:paddingRight="10dp"
-                    android:text="TextView" />
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="Volúmen actual:" />
 
                 <TextView
                     android:id="@+id/textView14"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
                     android:paddingTop="10dp"
                     android:paddingRight="10dp"
-                    android:text="TextView" />
+                    android:text="2.4 L" />
 
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingTop="10dp"
-                    android:paddingRight="10dp"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView20"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingTop="10dp"
-                    android:text="TextView" />
             </TableRow>
 
             <TableRow
@@ -211,8 +202,31 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_weight="4"
-                    android:background="?android:attr/listDivider" />
+                    android:background="?android:attr/listDivider"
+                    android:paddingTop="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="Ubicación:" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
             </TableRow>
         </TableLayout>
     </ScrollView>
+
 </RelativeLayout>
