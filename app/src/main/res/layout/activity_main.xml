@@ -49,20 +49,6 @@
         android:layout_marginBottom="33dp"
         android:fontFamily="@font/poppins"
         android:text="@string/desarrollado_por_k_lopez_e_martinez_y_j_pinargote"
-        android:textSize="12sp" /><![CDATA[
+        android:textSize="12sp" />
 
-
-
-
-
-
-
-
-
-    >
-
-
-
-
-]]>
 </RelativeLayout>
