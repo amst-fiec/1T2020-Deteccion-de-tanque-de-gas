@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import com.example.oxygen.Fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class PrincipalActivity extends AppCompatActivity {
@@ -31,7 +32,14 @@ public class PrincipalActivity extends AppCompatActivity {
 
         //inicio del fragment por defecto-----------------------------------------------------------
         Fragment fragmentUno = new EstacionsFragment();
-        fragmentUno.setArguments(args);
+        Intent i = getIntent();
+        HashMap<String, String> info_user = (HashMap<String, String>)i.getSerializableExtra("info_user");
+        ArrayList<Estacion> estaciones_user = (ArrayList<Estacion>)i.getSerializableExtra("estaciones");
+
+        Bundle b = new Bundle();
+        b.putSerializable("info_user",info_user);
+        b.putSerializable("estaciones_user",estaciones_user);
+        fragmentUno.setArguments(b);
         getSupportFragmentManager().beginTransaction().add(R.id.contenedor_fragment, fragmentUno).commit();
 
         //-----------------------------------------------------------------------------------------
@@ -59,16 +67,25 @@ public class PrincipalActivity extends AppCompatActivity {
                             break;
                         case R.id.nav_cuenta:
                             selectedFragment = new ProfileFragment();
-                            Intent intent = getIntent();
+                            /*Intent intent = getIntent();
                             HashMap<String, String> info_user = (HashMap<String, String>)intent.getSerializableExtra("info_user");
                             //agregar elementos a enviar al fragment----------------------------------------------------
                             Bundle b = new Bundle();
                             b.putSerializable("info_user",info_user);
-                            selectedFragment.setArguments(b);
-
+                            selectedFragment.setArguments(b);*/
                             break;
 
                     }
+
+                    Intent i = getIntent();
+                    HashMap<String, String> info_user = (HashMap<String, String>)i.getSerializableExtra("info_user");
+                    ArrayList<Estacion> estaciones_user = (ArrayList<Estacion>)i.getSerializableExtra("estaciones");
+
+                    Bundle b = new Bundle();
+                    b.putSerializable("info_user",info_user);
+                    b.putSerializable("estaciones_user",estaciones_user);
+                    selectedFragment.setArguments(b);
+
                     getSupportFragmentManager().beginTransaction().replace(R.id.contenedor_fragment,selectedFragment).commit();
                     return true;
 

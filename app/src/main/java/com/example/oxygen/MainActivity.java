@@ -21,6 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
@@ -92,12 +93,33 @@ public class MainActivity extends AppCompatActivity {
             info_user.put("user_email",user.getEmail());
             info_user.put("user_photo",String.valueOf(user.getPhotoUrl()));
             info_user.put("user_id",user.getUid());
+
+            //DATOS DE PRUEBA PARA ESTACIÓN
+
+            //primera estacion
+            Tanque tanque1 = new Tanque("Descripcion tanque 1",1,8.2,6.2,90);
+            Estacion estacion1 = new Estacion(tanque1,"guayaquil",505,1,1);
+
+            //segunda estacion
+            Tanque tanque2 = new Tanque("Descripcion tanque 2",2,8,5,90);
+            Estacion estacion2 = new Estacion(tanque2,"Quito",300,2,2);
+
+            //lista con las estaciones propias del usuario
+            ArrayList<Estacion> estaciones = new ArrayList<>();
+            estaciones.add(estacion1);
+            estaciones.add(estacion2);
+
+
+
             finish();
             Intent intentPro = new Intent(this, PrincipalActivity.class);
            //Intent i = new Intent(this,ProfileFragment.class);
             //i.putExtra("info_user",info_user);
             intentPro.putExtra("info_user",info_user);
             //Intent intent = new Intent(this,EstacionsFragment.class);
+
+            //envio de arraylist con estaciones
+            intentPro.putExtra("estaciones", estaciones);
             startActivity(intentPro);
 
 

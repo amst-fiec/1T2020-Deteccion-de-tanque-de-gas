@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F3F2F2"
-    tools:context=".InforEstacionFragment" >
+    tools:context=".InforTanque" >
 
     <com.ramijemli.percentagechartview.PercentageChartView
         android:id="@+id/pcv_oxigeno2"
         android:layout_width="146dp"
-        android:layout_height="139dp"
+        android:layout_height="123dp"
 
 
         android:layout_below="@+id/txt_decripcion"
@@ -54,12 +54,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_decripcion"
+        android:layout_alignTop="@+id/pcv_oxigeno2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="42dp"
         android:fontFamily="@font/poppins"
         android:text="@string/porcentaje_volumen"
-        android:textSize="30sp" />
+        android:textSize="24sp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -83,7 +83,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginStart="21dp"
         android:layout_marginLeft="21dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp">
 
@@ -96,15 +96,6 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_medium"
-                    android:paddingTop="10dp"
-                    android:paddingRight="17dp"
-                    android:text="Descripción:" />
-
-                <TextView
                     android:id="@+id/textView21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -112,22 +103,39 @@
                     android:fontFamily="@font/poppins"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:text="Esta es una breve descripción acerca de la estacion 1, descripción que puede tener un máximo de cuatro líneas" />
+                    android:text="Descripción acerca de la estacion 1" />
 
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_plomo">
 
-                <View
-                    android:id="@+id/divider4"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_span="2"
-                    android:layout_weight="2"
-                    android:background="?android:attr/listDivider" />
+                <TextView
+                    android:id="@+id/txt_porcentBateria"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_baseline_battery_full_24"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/txt_prctBateria" />
+
+                <TextView
+                    android:id="@+id/txt_porcentBateriaEst"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:paddingTop="10dp"
+                    android:text="90%" />
+
             </TableRow>
+
 
             <TableRow
                 android:layout_width="match_parent"
@@ -139,9 +147,11 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/poppins_medium"
-                    android:paddingTop="15dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="7dp"
                     android:paddingBottom="10dp"
-                    android:text="Volúmen inicial: " />
+                    android:text="@string/txt_volInicial" />
 
                 <TextView
                     android:id="@+id/textView10"
@@ -163,7 +173,8 @@
                     android:id="@+id/divider3"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_span="2"
+                    android:layout_span="3"
+                    android:layout_weight="4"
                     android:background="?android:attr/listDivider" />
             </TableRow>
 
@@ -177,9 +188,11 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/poppins_medium"
+                    android:paddingLeft="7dp"
                     android:paddingTop="15dp"
+                    android:paddingRight="7dp"
                     android:paddingBottom="10dp"
-                    android:text="Volúmen actual:" />
+                    android:text="@string/txt_volActual" />
 
                 <TextView
                     android:id="@+id/textView14"
@@ -215,17 +228,103 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingLeft="7dp"
                     android:paddingTop="15dp"
+                    android:paddingRight="7dp"
                     android:paddingBottom="10dp"
-                    android:text="Ubicación:" />
+                    android:text="@string/txt_ubicacion" />
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:fontFamily="@font/poppins"
+                    android:text="Guayaquil" />
             </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_span="2"
+                    android:layout_weight="2"
+                    android:background="?android:attr/listDivider" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_piso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/txt_piso" />
+
+                <TextView
+                    android:id="@+id/txt_piso_estacion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:paddingTop="10dp"
+                    android:text="1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/divider6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_span="2"
+                    android:layout_weight="2"
+                    android:background="?android:attr/listDivider" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_habitacion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="25dp"
+                    android:text="@string/txt_habitacion" />
+
+                <TextView
+                    android:id="@+id/txt_habitacionEst"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:paddingTop="10dp"
+                    android:text="505" />
+
+            </TableRow>
+
+
         </TableLayout>
     </ScrollView>
 

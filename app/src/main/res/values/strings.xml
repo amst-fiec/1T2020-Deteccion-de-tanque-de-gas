@@ -26,4 +26,12 @@
     <string name="infor_estacion">Piso 1 - Hospital Guayaquil</string>
     <string name="porcentaje_volumen">60%</string>
 
+    <string name="txt_volInicial">Volúmen inicial:</string>
+    <string name="txt_volActual">Volúmen actual:</string>
+    <string name="txt_ubicacion">Ubicación:</string>
+    <string name="txt_piso">Piso:</string>
+    <string name="txt_habitacion">Habitación:</string>
+    <string name="txt_prctBateria">Batería:</string>
+
+
 </resources>

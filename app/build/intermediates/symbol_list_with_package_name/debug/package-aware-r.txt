@@ -1445,6 +1445,7 @@ drawable gradient_two
 drawable ic_action_name
 drawable ic_action_name2
 drawable ic_baseline_add_circle_outline_24
+drawable ic_baseline_battery_full_24
 drawable ic_baseline_blur_on_24
 drawable ic_baseline_code_24
 drawable ic_baseline_description_24
@@ -1637,7 +1638,8 @@ id disableHome
 id divider
 id divider2
 id divider3
-id divider4
+id divider5
+id divider6
 id dropdown_menu
 id edit_query
 id end
@@ -1836,7 +1838,6 @@ id textView2
 id textView21
 id textView3
 id textView4
-id textView5
 id textView9
 id text_input_end_icon
 id text_input_start_icon
@@ -1863,9 +1864,15 @@ id txt_descripcion
 id txt_email
 id txt_encabezado
 id txt_estacion
+id txt_habitacion
+id txt_habitacionEst
 id txt_indicacion
 id txt_nombreEstacion
 id txt_nombre_estacion
+id txt_piso
+id txt_piso_estacion
+id txt_porcentBateria
+id txt_porcentBateriaEst
 id txt_ubicacion
 id txt_user
 id txt_volumen
@@ -1941,6 +1948,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_infor_tanque
 layout activity_main
 layout activity_principal
 layout custom_dialog
@@ -1961,7 +1969,6 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_agregar_estacion
 layout fragment_estacions
-layout fragment_infor_estacion
 layout fragment_profile
 layout layout_estacion
 layout mtrl_alert_dialog
@@ -2154,6 +2161,12 @@ string todo
 string txt_añadirEstacion
 string txt_email
 string txt_estacion
+string txt_habitacion
+string txt_piso
+string txt_prctBateria
+string txt_ubicacion
+string txt_volActual
+string txt_volInicial
 string user_name
 string volumen
 style AlertDialog_AppCompat

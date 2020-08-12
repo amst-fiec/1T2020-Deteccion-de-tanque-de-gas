@@ -1,5 +1,6 @@
 package com.example.oxygen;
 
+import android.content.Intent;
 import android.graphics.LinearGradient;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
@@ -14,15 +15,23 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.oxygen.Fragments.ProfileFragment;
+
 import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class EstacionsFragment extends Fragment {
 
     private ViewGroup linearLayout;
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
 
     public EstacionsFragment() {
     }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,12 +51,55 @@ public class EstacionsFragment extends Fragment {
         //añadir los layouts con la información de las vistas
         int id = R.layout.layout_estacion; //layout con datos de la estación
 
+        //datos obtenidos del usuario
+        ArrayList<Estacion> estaciones = (ArrayList<Estacion>) getArguments().getSerializable("estaciones_user");
+        if (estaciones!= null){
+            int numEstaciones = estaciones.size();
+            for (int i = 0;i <numEstaciones; i++){
+                Estacion estacion = estaciones.get(i);
 
-        //añadir layout normal------------------------------------------------------------------------------------
-        RelativeLayout relativeLayout1 = (RelativeLayout)inflater.inflate(id,null,false);
-        linearLayout.addView(relativeLayout1);
-        TextView txt = new TextView(getActivity()); //Textview para generar un espacio entre los elementos del linearLayout):
-        linearLayout.addView(txt);
+                //se asignan los valores correspondientes a la estacion
+                String descripcion = estacion.getTanque().getDescripcion();
+                int estacion_id = estacion.getId();
+                double volActual = estacion.getTanque().getVolActual();
+                double volInicial = estacion.getTanque().getVolInicial();
+
+
+                RelativeLayout relativeLayout = (RelativeLayout)inflater.inflate(id,null,false);
+                TextView titulo = (TextView)relativeLayout.findViewById(R.id.titulo_estacion) ;
+                String titulo_id = "Estacion" + estacion_id;
+                titulo.setText(titulo_id);
+
+                TextView subtitulo = (TextView)relativeLayout.findViewById(R.id.descripcion_estacion) ;
+                subtitulo.setText(descripcion);
+
+                int porcentaje = (int)((volActual*100)/(volInicial));
+                TextView prctjEstacion = (TextView)relativeLayout.findViewById(R.id.porcentaje);
+                String porcentaje_str = porcentaje + "%";
+                prctjEstacion.setText(porcentaje_str);
+
+                com.ramijemli.percentagechartview.PercentageChartView pcv = (com.ramijemli.percentagechartview.PercentageChartView)relativeLayout.findViewById(R.id.pcv_oxigeno);
+                pcv.setProgress(porcentaje,true);
+
+                linearLayout.addView(relativeLayout);
+                TextView txt = new TextView(getActivity()); //Textview para generar un espacio entre los elementos del linearLayout):
+                linearLayout.addView(txt);
+
+                relativeLayout.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent i = new Intent(getContext(), InforTanque.class);
+                        i.putExtra("numero_piscina",1);
+                        getActivity().startActivity(i);
+
+                    }
+                });
+
+
+            }
+
+        }
+
 
         /*
         //añadir layout warning------------------------------------------------------------------------------------
@@ -66,7 +118,7 @@ public class EstacionsFragment extends Fragment {
         TextView txt2 = new TextView(getActivity());
         linearLayout.addView(txt2);
 
-
+/*
         //añadir layout normal----------------------------------------------------------------------------------------
         RelativeLayout relativeLayout3 = (RelativeLayout)inflater.inflate(id,null,false);
         linearLayout.addView(relativeLayout3);
