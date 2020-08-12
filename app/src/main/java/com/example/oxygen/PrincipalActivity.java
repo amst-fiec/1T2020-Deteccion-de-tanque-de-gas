@@ -47,9 +47,6 @@ public class PrincipalActivity extends AppCompatActivity {
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
 
-
-
-
     }
 
 
