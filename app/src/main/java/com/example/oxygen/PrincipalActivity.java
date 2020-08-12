@@ -4,11 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.oxygen.Fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.HashMap;
 
 public class PrincipalActivity extends AppCompatActivity {
 
@@ -22,7 +25,6 @@ public class PrincipalActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.botton_menu);
 
 
-        //agregar elementos a enviar al fragment----------------------------------------------------
         args = new Bundle();
         //args.putString("ejemplo", ejemplo);
 
@@ -42,6 +44,7 @@ public class PrincipalActivity extends AppCompatActivity {
 
     }
 
+
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
@@ -56,6 +59,13 @@ public class PrincipalActivity extends AppCompatActivity {
                             break;
                         case R.id.nav_cuenta:
                             selectedFragment = new ProfileFragment();
+                            Intent intent = getIntent();
+                            HashMap<String, String> info_user = (HashMap<String, String>)intent.getSerializableExtra("info_user");
+                            //agregar elementos a enviar al fragment----------------------------------------------------
+                            Bundle b = new Bundle();
+                            b.putSerializable("info_user",info_user);
+                            selectedFragment.setArguments(b);
+
                             break;
 
                     }

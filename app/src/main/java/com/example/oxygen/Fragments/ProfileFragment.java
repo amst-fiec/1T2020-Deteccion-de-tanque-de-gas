@@ -3,14 +3,22 @@ package com.example.oxygen.Fragments;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.oxygen.MainActivity;
 import com.example.oxygen.R;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.squareup.picasso.Picasso;
+
+import java.util.HashMap;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -67,6 +75,21 @@ public class ProfileFragment extends Fragment {
         // Inflate the layout for this fragment
         View mainF = inflater.inflate(R.layout.fragment_profile, container, false);
         Button btn = mainF.findViewById(R.id.btn_CerrarS);
+        TextView txt_name = mainF.findViewById(R.id.txt_user);
+         TextView txt_email = mainF.findViewById(R.id.txt_email);
+        ImageView imv_photo = mainF.findViewById(R.id.imv_foto);
+        DatabaseReference db_reference;
+
+
+        System.out.println("HolaMundo");
+        HashMap<String,String> info_user = (HashMap<String, String>) getArguments().getSerializable("info_user");
+        System.out.println(info_user);
+
+        txt_name.setText(info_user.get("user_name"));
+        txt_email.setText(info_user.get("user_email"));
+        String photo = info_user.get("user_photo");
+        Picasso.with(getActivity().getApplicationContext()).load(photo).into(imv_photo);
+
         cerrarS(btn);
         return mainF;
     }

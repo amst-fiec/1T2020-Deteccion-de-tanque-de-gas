@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/ProyectoOxigen/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml",
+=======
             "outputFile": "C:\\Users\\eliza\\Desktop\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn\\values-mn.xml",
+>>>>>>> 506fe9c33eea296f7e2badb463e47e0664b8fa54
             "map": [
                 {
                     "source": "C:\\Users\\eliza\\.gradle\\caches\\transforms-2\\files-2.1\\78b13228d1b7806e4595749364e08dfc\\jetified-play-services-base-17.1.0\\res\\values-mn\\values.xml",

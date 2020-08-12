@@ -94,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
             info_user.put("user_id",user.getUid());
             finish();
             Intent intentPro = new Intent(this, PrincipalActivity.class);
+           //Intent i = new Intent(this,ProfileFragment.class);
+            //i.putExtra("info_user",info_user);
             intentPro.putExtra("info_user",info_user);
             //Intent intent = new Intent(this,EstacionsFragment.class);
             startActivity(intentPro);

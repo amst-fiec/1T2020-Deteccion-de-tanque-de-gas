@@ -1652,6 +1652,7 @@ id icon_only
 id ifRoom
 id image
 id img_logo
+id imv_foto
 id info
 id invisible
 id italic
@@ -1824,11 +1825,19 @@ id transition_transform
 id txt_alerta
 id txt_codigo
 id txt_descripcion
+<<<<<<< HEAD
+id txt_email
+=======
+>>>>>>> 506fe9c33eea296f7e2badb463e47e0664b8fa54
 id txt_encabezado
 id txt_estacion
 id txt_indicacion
 id txt_nombre_estacion
 id txt_ubicacion
+<<<<<<< HEAD
+id txt_user
+=======
+>>>>>>> 506fe9c33eea296f7e2badb463e47e0664b8fa54
 id txt_volumen
 id unchecked
 id uniform
@@ -2110,7 +2119,9 @@ string search_menu_title
 string status_bar_notification_info_overflow
 string todo
 string txt_añadirEstacion
+string txt_email
 string txt_estacion
+string user_name
 string volumen
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
