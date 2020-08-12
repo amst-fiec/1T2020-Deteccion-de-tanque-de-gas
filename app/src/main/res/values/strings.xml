@@ -17,5 +17,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="cerrar_sesion">Cerrar Sesion</string>
     <string name="codigo">Código del módulo</string>
-
+    <string name="nombre_estacion">Estación 1</string>
+    <string name="infor_estacion">Piso 1 - Hospital Guayaquil</string>
+    <string name="porcentaje_volumen">60%</string>
 </resources>

@@ -83,8 +83,8 @@
                     android:hint="@string/descripcion_estacion"
                     android:inputType="textPersonName"
                     android:maxLines="4"
-                    android:paddingLeft="32dp"
                     android:paddingTop="5dp"
+                    android:singleLine="false"
                     android:textSize="14sp" />
 
             </RelativeLayout>
