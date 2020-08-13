@@ -1,5 +1,6 @@
 package com.example.oxygen;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,6 +21,12 @@ import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,12 +38,17 @@ public class MainActivity extends AppCompatActivity {
     private GoogleSignInClient mGoogleSignInClient;
     private Button btn_login;
 
+    private ArrayList<Estacion> estacionesUsuario;
+    private Tanque tanque;
+    private Estacion estacion;
+    private DatabaseReference db_reference;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iniciarParametros();
-
+        iniciarLecturaDeBaseDatos();
 
     }
 
@@ -90,7 +102,10 @@ public class MainActivity extends AppCompatActivity {
             info_user.put("user_photo",String.valueOf(user.getPhotoUrl()));
             info_user.put("user_id",user.getUid());
 
+            // AQUI TENGO QUE AGG UNA FUNCION QUE ME ENVIE LA IFORMACION DEL USUARIO LOGIADO
+            //Y comparar si ya fue registrado o aun no ah sido registrado
 
+            /*
             //DATOS DE PRUEBA PARA ESTACIÓN
 
             //primera estacion
@@ -106,17 +121,16 @@ public class MainActivity extends AppCompatActivity {
             estaciones.add(estacion1);
             estaciones.add(estacion2);
 
-
-
-            finish();
-            Intent intentPro = new Intent(this, PrincipalActivity.class);
            //Intent i = new Intent(this,ProfileFragment.class);
             //i.putExtra("info_user",info_user);
-            intentPro.putExtra("info_user",info_user);
             //Intent intent = new Intent(this,EstacionsFragment.class);
 
             //envio de arraylist con estaciones
             intentPro.putExtra("estaciones", estaciones);
+            */
+            finish();
+            Intent intentPro = new Intent(this, PrincipalActivity.class);
+            intentPro.putExtra("info_user",info_user);
             startActivity(intentPro);
 
 
@@ -124,11 +138,89 @@ public class MainActivity extends AppCompatActivity {
             System.out.println("sin registrarse");
         }
     }
+    //Medoto para leer la base de datos
 
-    /**
-     * Metodo para iniciar todos los parametros de esta clase
-     *
-     */
+    public void iniciarLecturaDeBaseDatos(){
+        db_reference = FirebaseDatabase.getInstance().getReference().child("Usuarios");
+        System.out.println(db_reference);
+        db_reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()){
+                    obtenerDatosUser(snapshot);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                System.out.println("Hay un error al leer la base de datos");;
+            }
+        });
+    }
+
+    public void obtenerDatosUser(DataSnapshot snap){
+        String nameU = String.valueOf(snap.child("Nombre").getValue());
+        String correo = String.valueOf(snap.child("correo").getValue());
+
+        System.out.println("Hola Mundo");
+        System.out.println(nameU);
+        System.out.println(correo);
+        DataSnapshot snapChildEstaciones = snap.child("Estaciones");
+        DatabaseReference refenciaGeneral = snapChildEstaciones.getRef();
+        System.out.println(refenciaGeneral);
+        DatabaseReference referenceEstaciones = refenciaGeneral.getParent();
+        System.out.println(referenceEstaciones);
+        /*referenceEstaciones.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot snEstacion: dataSnapshot.getChildren()) {
+                    ObtenerDatoPorEstacion(snEstacion);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                System.out.println("ALgo salio mal");
+            }
+        }); */
+        referenceEstaciones.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                for(DataSnapshot dat: dataSnapshot.getChildren()){
+                    System.out.println("Ahora sii con feee");
+                    System.out.println(dat.child("idEstacion"));
+                }
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    public void ObtenerDatoPorEstacion(DataSnapshot snapshot){
+        //String id = String.valueOf(snapshot.child("idEstacion").getValue());
+        System.out.println("Vamos que si sale");
+        //System.out.println(id);
+        System.out.println(snapshot.child("Tanque"));
+        System.out.println(snapshot.child("idEstacion"));
+    }
 
     public void iniciarParametros(){
         mAuth = FirebaseAuth.getInstance();

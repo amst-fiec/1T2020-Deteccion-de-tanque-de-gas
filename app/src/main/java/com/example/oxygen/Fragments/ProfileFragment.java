@@ -76,7 +76,7 @@ public class ProfileFragment extends Fragment {
         View mainF = inflater.inflate(R.layout.fragment_profile, container, false);
         Button btn = mainF.findViewById(R.id.btn_CerrarS);
         TextView txt_name = mainF.findViewById(R.id.txt_user);
-         TextView txt_email = mainF.findViewById(R.id.txt_email);
+        TextView txt_email = mainF.findViewById(R.id.txt_email);
         ImageView imv_photo = mainF.findViewById(R.id.imv_foto);
         DatabaseReference db_reference;
 
