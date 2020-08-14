@@ -192,17 +192,8 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/ProjectOxigen/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/layout/fragment_profile.xml"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\eliza\\Desktop\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle.xml.flat",
-        "source": "C:\\Users\\eliza\\Desktop\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\drawable\\circle.xml"
-    },
-    {
-        "merged": "C:\\Users\\eliza\\Desktop\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_subject_24.png.flat",
-        "source": "C:\\Users\\eliza\\Desktop\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_subject_24.png"
-=======
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/ProjectOxigen/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/ProjectOxigen/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
->>>>>>> deac9dd9ba8100c029e7da588a241815040b28a1
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/ProjectOxigen/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_name.png.flat",
@@ -505,17 +496,8 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/ProjectOxigen/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-mdpi/ic_baseline_description_24.png"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\eliza\\Desktop\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_celeste.xml.flat",
-        "source": "C:\\Users\\eliza\\Desktop\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\src\\main\\res\\drawable\\btn_celeste.xml"
-    },
-    {
-        "merged": "C:\\Users\\eliza\\Desktop\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_location_on_24.png.flat",
-        "source": "C:\\Users\\eliza\\Desktop\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_location_on_24.png"
-=======
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/ProjectOxigen/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_baseline_add_circle_outline_24.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/ProjectOxigen/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-ldpi/ic_baseline_add_circle_outline_24.png"
->>>>>>> deac9dd9ba8100c029e7da588a241815040b28a1
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/ProjectOxigen/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_name.png.flat",
