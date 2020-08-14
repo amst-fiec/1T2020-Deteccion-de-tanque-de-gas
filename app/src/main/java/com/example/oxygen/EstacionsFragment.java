@@ -1,8 +1,6 @@
 package com.example.oxygen;
 
 import android.content.Intent;
-import android.graphics.LinearGradient;
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -11,16 +9,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.oxygen.Fragments.ProfileFragment;
-
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
-import java.util.HashMap;
 
 
 public class EstacionsFragment extends Fragment {
@@ -52,17 +44,18 @@ public class EstacionsFragment extends Fragment {
         int id = R.layout.layout_estacion; //layout con datos de la estación
 
         //datos obtenidos del usuario
-        ArrayList<Estacion> estaciones = (ArrayList<Estacion>) getArguments().getSerializable("estaciones_user");
-        if (estaciones!= null){
+       ArrayList<Estacion> estaciones = (ArrayList<Estacion>) getArguments().getSerializable("estaciones_user");
+        System.out.println(estaciones);
+       if (estaciones!= null){
             int numEstaciones = estaciones.size();
             for (int i = 0;i <numEstaciones; i++){
                 Estacion estacion = estaciones.get(i);
 
                 //se asignan los valores correspondientes a la estacion
                 String descripcion = estacion.getTanque().getDescripcion();
-                int estacion_id = estacion.getId();
-                double volActual = estacion.getTanque().getVolActual();
-                double volInicial = estacion.getTanque().getVolInicial();
+                int estacion_id = estacion.getIdEstacion();
+                //double volActual = estacion.getTanque().getVolActual();
+                //double volInicial = estacion.getTanque().getVolInicial();
 
 
                 RelativeLayout relativeLayout = (RelativeLayout)inflater.inflate(id,null,false);
@@ -73,13 +66,13 @@ public class EstacionsFragment extends Fragment {
                 TextView subtitulo = (TextView)relativeLayout.findViewById(R.id.descripcion_estacion) ;
                 subtitulo.setText(descripcion);
 
-                int porcentaje = (int)((volActual*100)/(volInicial));
+                //int porcentaje = (int)((volActual*100)/(volInicial));
                 TextView prctjEstacion = (TextView)relativeLayout.findViewById(R.id.porcentaje);
-                String porcentaje_str = porcentaje + "%";
-                prctjEstacion.setText(porcentaje_str);
+                //String porcentaje_str = porcentaje + "%";
+                //prctjEstacion.setText(porcentaje_str);
 
                 com.ramijemli.percentagechartview.PercentageChartView pcv = (com.ramijemli.percentagechartview.PercentageChartView)relativeLayout.findViewById(R.id.pcv_oxigeno);
-                pcv.setProgress(porcentaje,true);
+                //pcv.setProgress(porcentaje,true);
 
                 linearLayout.addView(relativeLayout);
                 TextView txt = new TextView(getActivity()); //Textview para generar un espacio entre los elementos del linearLayout):

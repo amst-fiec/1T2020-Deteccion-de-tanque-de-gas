@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.oxygen.Fragments.ProfileFragment;
+import com.example.oxygen.Objetos.Usuario;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
@@ -75,12 +76,15 @@ public class PrincipalActivity extends AppCompatActivity {
                     }
 
                     Intent i = getIntent();
-                    HashMap<String, String> info_user = (HashMap<String, String>)i.getSerializableExtra("info_user");
-                    ArrayList<Estacion> estaciones_user = (ArrayList<Estacion>)i.getSerializableExtra("estaciones");
+                    HashMap<String, Usuario> info_user = (HashMap<String, Usuario>)i.getSerializableExtra("usuario");
+                    //ArrayList<Estacion> estaciones_user = (ArrayList<Estacion>)i.getSerializableExtra("estaciones");
+                   // Usuario uObtenido = info_user.get("usuarioA");
 
+                    System.out.println("-----------------------------------------");
                     Bundle b = new Bundle();
+                    System.out.println(info_user);
                     b.putSerializable("info_user",info_user);
-                    b.putSerializable("estaciones_user",estaciones_user);
+                    //b.putSerializable("estaciones_user",estaciones_user);
                     selectedFragment.setArguments(b);
 
                     getSupportFragmentManager().beginTransaction().replace(R.id.contenedor_fragment,selectedFragment).commit();

@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.oxygen.MainActivity;
+import com.example.oxygen.Objetos.Usuario;
 import com.example.oxygen.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -82,15 +83,19 @@ public class ProfileFragment extends Fragment {
 
 
         System.out.println("HolaMundo");
-        HashMap<String,String> info_user = (HashMap<String, String>) getArguments().getSerializable("info_user");
+        HashMap<String, Usuario> info_user = (HashMap<String, Usuario>) getArguments().getSerializable("usuario");
         System.out.println(info_user);
-
-        txt_name.setText(info_user.get("user_name"));
-        txt_email.setText(info_user.get("user_email"));
-        String photo = info_user.get("user_photo");
+        // System.out.println(info_user.toString());
+        /*
+        Usuario uInfo = info_user.get("usuarioA");
+        System.out.println(uInfo.toString());
+        txt_name.setText(uInfo.getNombreUsuario());
+        txt_email.setText(uInfo.getCorreo());
+        String photo = uInfo.getImagen();
         Picasso.with(getActivity().getApplicationContext()).load(photo).into(imv_photo);
 
         cerrarS(btn);
+        */
         return mainF;
     }
 

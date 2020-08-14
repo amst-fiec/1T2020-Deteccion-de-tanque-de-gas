@@ -10,7 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.oxygen.Fragments.ProfileFragment;
+import com.example.oxygen.Objetos.Tanque;
+import com.example.oxygen.Objetos.Usuario;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -21,7 +22,6 @@ import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -30,6 +30,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     //Variables
@@ -37,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private GoogleSignInClient mGoogleSignInClient;
     private Button btn_login;
+    private ArrayList<Usuario> usuarios;
+
+    //public Intent inteP = new Intent(this,PrincipalActivity.class);
+    //static Usuario usuario = null;
 
     private ArrayList<Estacion> estacionesUsuario;
     private Tanque tanque;
@@ -48,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iniciarParametros();
-        iniciarLecturaDeBaseDatos();
+       // iniciarLecturaDeBaseDatos();
 
     }
 
@@ -101,125 +107,80 @@ public class MainActivity extends AppCompatActivity {
             info_user.put("user_email",user.getEmail());
             info_user.put("user_photo",String.valueOf(user.getPhotoUrl()));
             info_user.put("user_id",user.getUid());
+            //System.out.println(user.getDisplayName().toString());
+            //Crear objeto Usuario
 
-            // AQUI TENGO QUE AGG UNA FUNCION QUE ME ENVIE LA IFORMACION DEL USUARIO LOGIADO
-            //Y comparar si ya fue registrado o aun no ah sido registrado
+            db_reference = FirebaseDatabase.getInstance().getReference().child("Usuarios");
+            System.out.println(db_reference);
+            //Obtener usuario O crear usuario
+           //crearUsuario(db_reference);
 
-            /*
-            //DATOS DE PRUEBA PARA ESTACIÓN
-
-            //primera estacion
-            Tanque tanque1 = new Tanque("Descripcion tanque 1",1,8.2,6.2,90);
-            Estacion estacion1 = new Estacion(tanque1,"guayaquil",505,1,1);
-
-            //segunda estacion
-            Tanque tanque2 = new Tanque("Descripcion tanque 2",2,8,5,90);
-            Estacion estacion2 = new Estacion(tanque2,"Quito",300,2,2);
-
-            //lista con las estaciones propias del usuario
-            ArrayList<Estacion> estaciones = new ArrayList<>();
-            estaciones.add(estacion1);
-            estaciones.add(estacion2);
-
-           //Intent i = new Intent(this,ProfileFragment.class);
-            //i.putExtra("info_user",info_user);
-            //Intent intent = new Intent(this,EstacionsFragment.class);
-
-            //envio de arraylist con estaciones
-            intentPro.putExtra("estaciones", estaciones);
-            */
-            finish();
-            Intent intentPro = new Intent(this, PrincipalActivity.class);
-            intentPro.putExtra("info_user",info_user);
-            startActivity(intentPro);
-
-
-        }else{
-            System.out.println("sin registrarse");
+            crearUsuario(db_reference);
+            System.out.println("Viendo array");
+            //System.out.println(usuarios.toString());
         }
-    }
-    //Medoto para leer la base de datos
 
-    public void iniciarLecturaDeBaseDatos(){
-        db_reference = FirebaseDatabase.getInstance().getReference().child("Usuarios");
-        System.out.println(db_reference);
+    }
+
+    //Intent intentPro = new Intent(this, PrincipalActivity.class);
+    public void crearUsuario(DatabaseReference db_reference){
+        //Usuario u1;
+        HashMap<String,Usuario> usuarioMapa = new HashMap<>();
+        Intent inteP = new Intent(MainActivity.this,PrincipalActivity.class);
+        //usuarios = new ArrayList<>();
         db_reference.addValueEventListener(new ValueEventListener() {
+            Usuario usuario;
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()){
-                    obtenerDatosUser(snapshot);
+                List<DataSnapshot> parametros = new ArrayList<>();
+                Iterator<DataSnapshot> items = dataSnapshot.getChildren().iterator();
+                while(items.hasNext()){
+                    DataSnapshot item = items.next();
+                    parametros.add(item);
+                    //System.out.println(item.getValue());
                 }
+
+                DataSnapshot estaciones = parametros.get(0).child("Estaciones");
+                System.out.println(estaciones.toString());
+
+               // System.out.println(estaciones.getValue());
+                System.out.println(parametros.get(0).child("correo").getValue());
+                String correo = String.valueOf(parametros.get(0).child("imagen").getValue());
+                String imagen = String.valueOf(parametros.get(0).child("imagen").getValue());
+                String nombreU = String.valueOf(parametros.get(0).child("nombreUsuario").getValue());
+                String idUsuario = String.valueOf(parametros.get(0).getKey().toString());
+                System.out.println(idUsuario);
+                Usuario usuarioOb =  new Usuario(nombreU,idUsuario,imagen,correo,estaciones);
+                System.out.println(usuarioOb.toString());
+
+                usuarioMapa.put("usuarioA", usuarioOb);
+                System.out.println(usuarioMapa.toString());
+                inteP.putExtra("usuario",usuarioMapa );
+                Bundle enviar = new Bundle();
+                enviar.putSerializable("envia", usuarioMapa);
+                startActivity(inteP);
+
+
+                //inteP.putExtra("hola", "hola");
+                //inteP.putExtra
+               // startActivity(inteP);
+
+
+              //  startActivity(inteP);
+
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                System.out.println("Hay un error al leer la base de datos");;
+
             }
+            //Intent i = new Intent(MainActivity.this,PrincipalActivity.class);
+
         });
-    }
+        finish();
+        inteP.putExtra("usuario",usuarioMapa );
 
-    public void obtenerDatosUser(DataSnapshot snap){
-        String nameU = String.valueOf(snap.child("Nombre").getValue());
-        String correo = String.valueOf(snap.child("correo").getValue());
 
-        System.out.println("Hola Mundo");
-        System.out.println(nameU);
-        System.out.println(correo);
-        DataSnapshot snapChildEstaciones = snap.child("Estaciones");
-        DatabaseReference refenciaGeneral = snapChildEstaciones.getRef();
-        System.out.println(refenciaGeneral);
-        DatabaseReference referenceEstaciones = refenciaGeneral.getParent();
-        System.out.println(referenceEstaciones);
-        /*referenceEstaciones.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot snEstacion: dataSnapshot.getChildren()) {
-                    ObtenerDatoPorEstacion(snEstacion);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                System.out.println("ALgo salio mal");
-            }
-        }); */
-        referenceEstaciones.addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                for(DataSnapshot dat: dataSnapshot.getChildren()){
-                    System.out.println("Ahora sii con feee");
-                    System.out.println(dat.child("idEstacion"));
-                }
-            }
-
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-    }
-
-    public void ObtenerDatoPorEstacion(DataSnapshot snapshot){
-        //String id = String.valueOf(snapshot.child("idEstacion").getValue());
-        System.out.println("Vamos que si sale");
-        //System.out.println(id);
-        System.out.println(snapshot.child("Tanque"));
-        System.out.println(snapshot.child("idEstacion"));
     }
 
     public void iniciarParametros(){
