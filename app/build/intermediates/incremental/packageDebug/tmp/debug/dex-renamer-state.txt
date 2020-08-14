@@ -1,4 +1,9 @@
-#Wed Aug 12 06:41:43 COT 2020
+<<<<<<< HEAD
+#Thu Aug 13 21:06:24 COT 2020
 base.0=C\:\\Users\\eliza\\Desktop\\1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+=======
+#Wed Aug 12 18:14:07 ECT 2020
+base.0=/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/ProjectOxigen/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+>>>>>>> deac9dd9ba8100c029e7da588a241815040b28a1
 path.0=classes.dex
 renamed.0=classes.dex

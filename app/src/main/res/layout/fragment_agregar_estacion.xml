@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/contenedor_agregarEstacion"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#F3F2F2"
     tools:context=".AgregarEstacionFragment">
 
     <TextView
         android:id="@+id/txt_encabezado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#E6E4E4"
         android:fontFamily="@font/poppins_medium"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="50dp"
         android:text="@string/txt_añadirEstacion"
-        android:textSize="18sp" />
+        android:textColor="#474545"
+        android:textSize="19sp" />
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -30,7 +32,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp">
 
@@ -53,13 +55,14 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/fondo_informacion"
-                android:drawableLeft="@drawable/ic_baseline_blur_on_24"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:fontFamily="@font/poppins"
                 android:hint="@string/nombre"
                 android:inputType="textPersonName"
                 android:maxLength="15"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:textSize="14sp" />
 
             <RelativeLayout
@@ -68,7 +71,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="19dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="21dp"
                 android:layout_marginRight="21dp">
 
@@ -83,7 +86,10 @@
                     android:hint="@string/descripcion_estacion"
                     android:inputType="textPersonName"
                     android:maxLines="4"
+                    android:minLines="4"
+                    android:paddingLeft="10dp"
                     android:paddingTop="5dp"
+                    android:paddingRight="10dp"
                     android:singleLine="false"
                     android:textSize="14sp" />
 
@@ -95,17 +101,18 @@
                 android:layout_height="40dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/fondo_informacion"
-                android:drawableLeft="@drawable/ic_baseline_code_24"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:fontFamily="@font/poppins"
                 android:hint="@string/codigo"
-                android:inputType="textPersonName"
+                android:inputType="number|textPersonName"
                 android:maxLength="15"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:textSize="14sp" />
 
             <EditText
@@ -114,18 +121,59 @@
                 android:layout_height="40dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/fondo_informacion"
-                android:drawableLeft="@drawable/ic_baseline_location_on_24"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:fontFamily="@font/poppins"
                 android:hint="@string/btn_agregarUbicacion"
                 android:inputType="textPersonName"
                 android:maxLength="15"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txt_habitacion"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fondo_informacion"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center_vertical"
+                    android:hint="@string/habAddEstacion"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/txt_piso"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fondo_informacion"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center_vertical"
+                    android:hint="@string/pisoAddegarEstacion"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/txt_indicacion"
@@ -148,18 +196,18 @@
                     android:layout_width="175dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="21dp"
-                    android:layout_marginLeft="21dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/fondo_informacion"
-                    android:drawableLeft="@drawable/ic_baseline_group_work_24"
                     android:drawablePadding="10dp"
-                    android:ems="10"
                     android:fontFamily="@font/poppins"
                     android:hint="@string/volumen"
                     android:inputType="numberDecimal"
                     android:maxLength="15"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
                     android:textSize="14sp" />
 
                 <Spinner
@@ -170,10 +218,9 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="21dp"
-                    android:layout_marginRight="21dp"
-                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
                     android:background="@drawable/style_spinner"
-                    android:paddingLeft="15dp" />
+                    android:paddingTop="5dp" />
             </LinearLayout>
 
             <Button
@@ -182,13 +229,13 @@
                 android:layout_height="35dp"
                 android:layout_marginStart="21dp"
                 android:layout_marginLeft="21dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="35dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/boton_redondo"
+                android:background="@drawable/btn_celeste"
                 android:fontFamily="@font/poppins_medium"
                 android:text="@string/btn_agregarEstacion"
-                android:textColor="@color/cardview_light_background"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
                 android:textSize="14sp" />
 
             <TextView
@@ -204,6 +251,20 @@
                 android:textSize="9sp" />
         </LinearLayout>
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="73dp"
+        android:layout_height="99dp"
+        android:layout_alignBottom="@+id/text_encabezado"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="-1dp"
+        android:src="@drawable/tanques" />
 
 
 </RelativeLayout>

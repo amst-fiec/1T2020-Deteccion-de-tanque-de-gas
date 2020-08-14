@@ -3,11 +3,13 @@ package com.example.oxygen;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.oxygen.Fragments.ProfileFragment;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -36,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iniciarParametros();
-
-
     }
 
     private void cerrarSesion(){
@@ -68,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             }catch (ApiException e){
                 Log.w("TAG", "Fallo el inicio de sesion con google.", e);
+                Context context = getApplicationContext();
+                CharSequence text = "No se realizó el inicio de sesión con google.";
+                int duration = Toast.LENGTH_SHORT;
+                Toast.makeText(context, text, duration).show();
             }
         }
     }
@@ -83,16 +87,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateUI(FirebaseUser user){
         if(user != null){
-           // String name = user.getDisplayName();
-            //String email = user.getEmail();
-            //String photo = String.valueOf(user.getPhotoUrl());
-            //System.out.println("nombre");
-            //System.out.println(name);
+
             HashMap<String,String> info_user = new HashMap<>();
             info_user.put("user_name",user.getDisplayName());
             info_user.put("user_email",user.getEmail());
             info_user.put("user_photo",String.valueOf(user.getPhotoUrl()));
             info_user.put("user_id",user.getUid());
+
 
             //DATOS DE PRUEBA PARA ESTACIÓN
 

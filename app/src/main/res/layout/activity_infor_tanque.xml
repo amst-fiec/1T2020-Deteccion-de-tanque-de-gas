@@ -9,12 +9,12 @@
     tools:context=".InforTanque" >
 
     <com.ramijemli.percentagechartview.PercentageChartView
-        android:id="@+id/pcv_oxigeno2"
+        android:id="@+id/pcv_volumen"
         android:layout_width="146dp"
         android:layout_height="123dp"
 
 
-        android:layout_below="@+id/txt_decripcion"
+        android:layout_below="@+id/txt_detalle"
         android:layout_centerHorizontal="true"
 
         android:layout_marginTop="27dp"
@@ -29,7 +29,7 @@
         app:pcv_startAngle="270" />
 
     <TextView
-        android:id="@+id/txt_nombreEstacion"
+        android:id="@+id/text_encabezado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -41,62 +41,44 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/txt_decripcion"
+        android:id="@+id/txt_detalle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_nombreEstacion"
+        android:layout_below="@+id/text_encabezado"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/poppins"
         android:text="@string/infor_estacion" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txt_porcentaje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/pcv_oxigeno2"
+        android:layout_alignTop="@+id/pcv_volumen"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp"
         android:fontFamily="@font/poppins"
         android:text="@string/porcentaje_volumen"
         android:textSize="24sp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_above="@+id/txt_decripcion"
-        android:layout_marginEnd="7dp"
-        android:layout_marginRight="7dp"
-        android:layout_marginBottom="6dp"
-        android:layout_toStartOf="@+id/txt_nombreEstacion"
-        android:layout_toLeftOf="@+id/txt_nombreEstacion"
-        android:src="@drawable/tanques" />
-
     <ScrollView
-        android:layout_width="370dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/pcv_oxigeno2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_below="@+id/pcv_volumen"
+        android:layout_marginTop="30dp">
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView21"
+                    android:id="@+id/text_descripcion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
@@ -109,29 +91,32 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/btn_plomo">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_plomo"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
 
                 <TextView
                     android:id="@+id/txt_porcentBateria"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/ic_baseline_battery_full_24"
                     android:drawablePadding="5dp"
                     android:fontFamily="@font/poppins_medium"
-                    android:paddingLeft="5dp"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
                     android:text="@string/txt_prctBateria" />
 
                 <TextView
                     android:id="@+id/txt_porcentBateriaEst"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:fontFamily="@font/poppins"
-                    android:paddingTop="10dp"
+                    android:gravity="center_vertical"
                     android:text="90%" />
 
             </TableRow>
@@ -142,7 +127,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/txt_vInicial"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -154,7 +139,7 @@
                     android:text="@string/txt_volInicial" />
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/txt_vInicialEstacion"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -183,7 +168,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/txt_vActual"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -195,7 +180,7 @@
                     android:text="@string/txt_volActual" />
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/txt_vActualEstacion"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -224,7 +209,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/text_ubicacion"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -236,7 +221,7 @@
                     android:text="@string/txt_ubicacion" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/txt_ubicacionEstacion"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -262,7 +247,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/txt_piso"
+                    android:id="@+id/text_piso"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -274,7 +259,7 @@
                     android:text="@string/txt_piso" />
 
                 <TextView
-                    android:id="@+id/txt_piso_estacion"
+                    android:id="@+id/txt_pisoEstacion"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -302,7 +287,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/txt_habitacion"
+                    android:id="@+id/text_habitacion"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -314,7 +299,7 @@
                     android:text="@string/txt_habitacion" />
 
                 <TextView
-                    android:id="@+id/txt_habitacionEst"
+                    android:id="@+id/txt_habitacionEstacion"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -322,6 +307,22 @@
                     android:paddingTop="10dp"
                     android:text="505" />
 
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btn_editar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="60dp"
+                    android:layout_weight="2"
+                    android:background="?android:attr/textCursorDrawable"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/editar"
+                    android:textSize="13sp" />
             </TableRow>
 
 

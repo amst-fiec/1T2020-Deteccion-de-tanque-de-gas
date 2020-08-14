@@ -19,7 +19,7 @@
     <string name="codigo">Código del módulo</string>
 
     <string name="user_name">Nombre de usuario</string>
-    <string name="txt_email">email</string>
+    <string name="txt_email">emailusuario@correo.com</string>
 
 
     <string name="nombre_estacion">Estación 1</string>
@@ -32,6 +32,8 @@
     <string name="txt_piso">Piso:</string>
     <string name="txt_habitacion">Habitación:</string>
     <string name="txt_prctBateria">Batería:</string>
-
+    <string name="editar"> Editar estación</string>
+    <string name="habAddEstacion">Habitacion</string>
+    <string name="pisoAddegarEstacion">Piso</string>
 
 </resources>

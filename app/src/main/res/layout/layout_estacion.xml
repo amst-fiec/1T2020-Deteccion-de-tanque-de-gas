@@ -63,7 +63,7 @@
             app:pcv_backgroundBarThickness="6dp"
             app:pcv_mode="ring"
             app:pcv_orientation="counter_clockwise"
-            app:pcv_progress="75"
+            app:pcv_progress="0"
             app:pcv_progressBarThickness="10dp"
             app:pcv_startAngle="90" />
 
