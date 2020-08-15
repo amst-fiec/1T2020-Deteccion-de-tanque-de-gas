@@ -13,9 +13,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.oxygen.MainActivity;
+import com.example.oxygen.ObjetosNat.FirebaseDatos;
 import com.example.oxygen.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
@@ -78,13 +80,14 @@ public class ProfileFragment extends Fragment {
         TextView txt_name = mainF.findViewById(R.id.txt_user);
          TextView txt_email = mainF.findViewById(R.id.txt_email);
         ImageView imv_photo = mainF.findViewById(R.id.imv_foto);
-        DatabaseReference db_reference;
+        //DatabaseReference db_reference = FirebaseDatabase.getInstance().getReference().child(FirebaseDatos.ESTACIONES_FI);
 
 
         System.out.println("HolaMundo");
         HashMap<String,String> info_user = (HashMap<String, String>) getArguments().getSerializable("info_user");
         System.out.println(info_user);
-
+        System.out.println(info_user.get("user_name"));
+        System.out.println(info_user.get("idModulo"));
         txt_name.setText(info_user.get("user_name"));
         txt_email.setText(info_user.get("user_email"));
         String photo = info_user.get("user_photo");

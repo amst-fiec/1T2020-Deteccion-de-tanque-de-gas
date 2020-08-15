@@ -1669,6 +1669,7 @@ id fixed
 id fondo
 id forever
 id fragment_estaciones
+id frameLayout
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1985,6 +1986,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_agregar_estacion
+layout fragment_estaciones
 layout fragment_estacions
 layout fragment_profile
 layout layout_estacion

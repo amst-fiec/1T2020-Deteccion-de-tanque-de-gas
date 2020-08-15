@@ -8,10 +8,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.oxygen.Fragments.EstacionesFragment;
+import com.example.oxygen.Fragments.EstacionsFragment;
 import com.example.oxygen.Fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class PrincipalActivity extends AppCompatActivity {
@@ -33,12 +34,12 @@ public class PrincipalActivity extends AppCompatActivity {
         //inicio del fragment por defecto-----------------------------------------------------------
         Fragment fragmentUno = new EstacionsFragment();
         Intent i = getIntent();
-        HashMap<String, String> info_user = (HashMap<String, String>)i.getSerializableExtra("info_user");
-        ArrayList<Estacion> estaciones_user = (ArrayList<Estacion>)i.getSerializableExtra("estaciones");
+        //HashMap<String, String> info_user = (HashMap<String, String>)i.getSerializableExtra("info_user");
+        //ArrayList<Estacion> estaciones_user = (ArrayList<Estacion>)i.getSerializableExtra("estaciones");
 
         Bundle b = new Bundle();
-        b.putSerializable("info_user",info_user);
-        b.putSerializable("estaciones_user",estaciones_user);
+        //b.putSerializable("info_user",info_user);
+        //b.putSerializable("estaciones_user",estaciones_user);
         fragmentUno.setArguments(b);
         getSupportFragmentManager().beginTransaction().add(R.id.contenedor_fragment, fragmentUno).commit();
 
@@ -57,7 +58,7 @@ public class PrincipalActivity extends AppCompatActivity {
                     Fragment selectedFragment = null;
                     switch (item.getItemId()){
                         case R.id.nav_home:
-                            selectedFragment = new EstacionsFragment();
+                            selectedFragment = new EstacionesFragment();
                             break;
                         case R.id.nav_add:
                             selectedFragment = new AgregarEstacionFragment();
@@ -76,11 +77,11 @@ public class PrincipalActivity extends AppCompatActivity {
 
                     Intent i = getIntent();
                     HashMap<String, String> info_user = (HashMap<String, String>)i.getSerializableExtra("info_user");
-                    ArrayList<Estacion> estaciones_user = (ArrayList<Estacion>)i.getSerializableExtra("estaciones");
+                   // ArrayList<Estacion> estaciones_user = (ArrayList<Estacion>)i.getSerializableExtra("estaciones");
 
                     Bundle b = new Bundle();
                     b.putSerializable("info_user",info_user);
-                    b.putSerializable("estaciones_user",estaciones_user);
+                    //b.putSerializable("estaciones_user",estaciones_user);
                     selectedFragment.setArguments(b);
 
                     getSupportFragmentManager().beginTransaction().replace(R.id.contenedor_fragment,selectedFragment).commit();
