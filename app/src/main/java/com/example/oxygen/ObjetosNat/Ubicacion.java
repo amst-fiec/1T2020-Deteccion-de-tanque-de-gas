@@ -3,13 +3,16 @@ package com.example.oxygen.ObjetosNat;
 public class Ubicacion {
     private String ciudad;
     private int habitacion;
-    private String nombreHospital;
+    private int idUbicacion;
     private int piso;
 
-    public Ubicacion(String ciudad, int habitacion, String nombreHospital, int piso) {
+    public Ubicacion() {
+    }
+
+    public Ubicacion(String ciudad, int habitacion, int idUbicacion, int piso) {
         this.ciudad = ciudad;
         this.habitacion = habitacion;
-        this.nombreHospital = nombreHospital;
+        this.idUbicacion = idUbicacion;
         this.piso = piso;
     }
 
@@ -29,12 +32,12 @@ public class Ubicacion {
         this.habitacion = habitacion;
     }
 
-    public String getNombreHospital() {
-        return nombreHospital;
+    public int getIdUbicacion() {
+        return idUbicacion;
     }
 
-    public void setNombreHospital(String nombreHospital) {
-        this.nombreHospital = nombreHospital;
+    public void setIdUbicacion(int idUbicacion) {
+        this.idUbicacion = idUbicacion;
     }
 
     public int getPiso() {
@@ -43,5 +46,15 @@ public class Ubicacion {
 
     public void setPiso(int piso) {
         this.piso = piso;
+    }
+
+    @Override
+    public String toString() {
+        return "Ubicacion{" +
+                "ciudad='" + ciudad + '\'' +
+                ", habitacion=" + habitacion +
+                ", idUbicacion=" + idUbicacion +
+                ", piso=" + piso +
+                '}';
     }
 }

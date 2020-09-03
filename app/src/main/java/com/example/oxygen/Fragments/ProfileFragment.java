@@ -3,7 +3,6 @@ package com.example.oxygen.Fragments;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,11 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.oxygen.MainActivity;
-import com.example.oxygen.ObjetosNat.FirebaseDatos;
 import com.example.oxygen.R;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;

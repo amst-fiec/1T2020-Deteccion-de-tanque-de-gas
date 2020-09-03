@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import java.util.ArrayList;
+
 public class InforTanque extends AppCompatActivity {
 
     @Override
@@ -11,4 +13,6 @@ public class InforTanque extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_infor_tanque);
     }
+
+
 }

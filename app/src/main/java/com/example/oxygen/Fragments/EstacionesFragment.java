@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import com.example.oxygen.InforTanque;
 import com.example.oxygen.ObjetosNat.Estacion;
-import com.example.oxygen.ObjetosNat.FirebaseDatos;
+import com.example.oxygen.ObjetosNat.VariablesUnicas;
 import com.example.oxygen.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -39,7 +39,7 @@ public class EstacionesFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     private DatabaseReference databaseReference;
-    private ArrayList<Estacion> estaciones = new ArrayList<>();
+    //private ArrayList<Estacion> estaciones = new ArrayList<>();
     private ArrayAdapter<Estacion> adapterEstacion;
     private ListView  vistaEstaciones;
     private Intent i;
@@ -95,32 +95,26 @@ public class EstacionesFragment extends Fragment {
         linearLayout = (ViewGroup)principal.findViewById(R.id.lista_estaciones);
         int id = R.layout.layout_estacion;
 
-        Estacion estacion = new Estacion(2,2,"50",5,"45");
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
-        databaseReference.child(FirebaseDatos.ESTACIONES_FI).child(info_user.get("idModulo")).setValue(estacion);
-
-        databaseReference.child(FirebaseDatos.ESTACIONES_FI).addValueEventListener(new ValueEventListener() {
+/*
+        databaseReference.child(VariablesUnicas.ESTACIONES_FI).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                estaciones.clear();
+                //estaciones.clear();
                 for (DataSnapshot objSnap: dataSnapshot.getChildren()){
                     Estacion es = objSnap.getValue(Estacion.class);
                     System.out.println(es.toString());
                     System.out.println(objSnap.getKey());
-                    if(info_user.get("idModulo").equals(objSnap.getKey())){
-                        System.out.println(info_user.get("idModulo").equals(objSnap.getKey()));
-                        estaciones.add(es);
-                    }
+
                    // adapterEstacion = new ArrayAdapter<Estacion>(principal.getContext(),android.R.layout.simple_dropdown_item_1line,estaciones);
-                    //vistaEstaciones.setAdapter(adapterEstacion);
+                    // vistaEstaciones.setAdapter(adapterEstacion);
 
 
                 }
-                System.out.println(estaciones.size());
-                System.out.println(estaciones.get(0).toString());
+
                 //Recorro el array de los objetos estacion;
-                for (Estacion estacionU: estaciones) {
-                    String nombreEstacion = estacionU.getNombreEstacion();
+               for (Estacion estacionU: estaciones) {
+                    String nombreEstacion = estacionU.getNombre();
                     String porcentajeBateria = estacionU.getPorcentajeBateria();
 
                     RelativeLayout relativeLayout = (RelativeLayout)inflater.inflate(id,null,false);
@@ -151,14 +145,14 @@ public class EstacionesFragment extends Fragment {
 
                 }
 
-            }
+
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
 
-        });
+        });*/
         return principal;
 
 

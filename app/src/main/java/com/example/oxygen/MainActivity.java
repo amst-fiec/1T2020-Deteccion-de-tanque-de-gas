@@ -1,20 +1,23 @@
 package com.example.oxygen;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.renderscript.Sampler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.oxygen.Fragments.EstacionesFragment;
 import com.example.oxygen.Fragments.EstacionsFragment;
 import com.example.oxygen.Fragments.ProfileFragment;
-import com.example.oxygen.ObjetosNat.FirebaseDatos;
+import com.example.oxygen.ObjetosNat.Estacion;
+import com.example.oxygen.ObjetosNat.Ubicacion;
+import com.example.oxygen.ObjetosNat.VariablesUnicas;
 import com.example.oxygen.ObjetosNat.Usuario;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -26,10 +29,16 @@ import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     //Variables
@@ -39,14 +48,27 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_login;
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
-    //DataSnapshot dataSnapshot = new DataSnapshot();
+    private static ArrayList<Usuario> usuarios = new ArrayList<>();
+    private static ArrayList<Ubicacion> ubicaciones = new ArrayList<>();
+    private static ArrayList<Estacion> estaciones = new ArrayList<>();
+
+
+    private static Usuario usuario;
+    //private static Usuario usuarioActual;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        databaseReference = FirebaseDatabase.getInstance().getReference();
+
         iniciarParametros();
+        usuarios = solicitarUsuarios();
+        ubicaciones = solicitarUbicaciones();
+        estaciones = solicitarEstaciones();
+
     }
+
 
     private void cerrarSesion(){
         mGoogleSignInClient.signOut().addOnCompleteListener(this, task -> updateUI(null));
@@ -100,18 +122,10 @@ public class MainActivity extends AppCompatActivity {
 
             Intent intentPro = new Intent(this, PrincipalActivity.class);
             Intent i = new Intent(this,ProfileFragment.class);
-           // Bundle bundleEstacion = new Bundle();
-            //bundleEstacion.putSerializable("info_user",info_user);
-            //Intent intentProfileF = new Intent(this, EstacionsFragment.class);
-           // intentPro.putExtra("info_user",info_user);
             i.putExtra("info_user",info_user);
             Intent intentEstacion = new Intent(this, EstacionsFragment.class);
             intentEstacion.putExtra("info_user",info_user);
             intentPro.putExtra("info_user",info_user);
-            //Intent intent = new Intent(this,EstacionsFragment.class);
-
-            //envio de arraylist con estaciones
-            //intentPro.putExtra("estaciones", estaciones);
             finish();
             startActivity(intentPro);
 
@@ -121,46 +135,69 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        //DATOS DE PRUEBA PARA ESTACIÓN
 
-        //primera estacion
-        // Tanque tanque1 = new Tanque("Descripcion tanque 1",1,8.2,6.2,90);
-        //Estacion estacion1 = new Estacion(tanque1,"guayaquil",505,1,1);
-
-        //segunda estacion
-        //Tanque tanque2 = new Tanque("Descripcion tanque 2",2,8,5,90);
-        //Estacion estacion2 = new Estacion(tanque2,"Quito",300,2,2);
-
-        //lista con las estaciones propias del usuario
-        //ArrayList<Estacion> estaciones = new ArrayList<>();
-        //estaciones.add(estacion1);
-        //estaciones.add(estacion2);
     }
 
-    /**
-     * Metodo para iniciar todos los parametros de esta clase
-     *
-     */
-
-    public HashMap<String,String> cargarUsuario(FirebaseUser user){
+    public  HashMap<String,String> cargarUsuario(FirebaseUser user){
         HashMap<String,String> info_user = new HashMap<>();
         info_user.put("user_name",user.getDisplayName());
         info_user.put("user_email",user.getEmail());
         info_user.put("user_photo",String.valueOf(user.getPhotoUrl()));
         info_user.put("user_id",user.getUid());
-        String idModulo = "505050";
-        info_user.put("idModulo",idModulo);
         String uiDUser = user.getUid();
         String correo = user.getEmail();
         String imagen = String.valueOf(user.getPhotoUrl());
         String nombreUsuario = user.getDisplayName();
-        Usuario usuario = new Usuario(correo,imagen,nombreUsuario);
+        usuario = new Usuario(correo,uiDUser,imagen,nombreUsuario);
+        databaseReference.child(VariablesUnicas.USUARIO_FI).child(uiDUser).setValue(usuario);
 
-        databaseReference = FirebaseDatabase.getInstance().getReference();
-        databaseReference.child(FirebaseDatos.USUARIO_FI).child(uiDUser).setValue(usuario);
-        databaseReference.child(FirebaseDatos.USUARIO_FI).child(uiDUser).child("Estaciones").child(idModulo).child("Descripcion").setValue("Paciente estable");
+        for (Usuario u: usuarios){
+            if(u.equals(usuario)){
+                System.out.println("Usuario ya agregado");
+            }else{
+                databaseReference.child(VariablesUnicas.USUARIO_FI).child(uiDUser).setValue(usuario);
+            }
+        }
 
+
+        //System.out.println("Longitud: " + usuarios.size());
         return info_user;
+    }
+
+    public static Usuario getUsuario() {
+        return usuario;
+    }
+
+    public List<String> obtenerIdUsuarios(){
+        List<String> idsUsuarios = new ArrayList<>();
+        for(Usuario u: usuarios){
+            idsUsuarios.add(u.getIdUser());
+        }
+        return idsUsuarios;
+    }
+
+    public static ArrayList<Usuario> getUsuarios() {
+        return usuarios;
+    }
+
+
+
+    public ArrayList<Usuario> solicitarUsuarios(){
+        final ArrayList<Usuario> usuariosSistema = new ArrayList<>();
+        databaseReference.child(VariablesUnicas.USUARIO_FI).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for(DataSnapshot snapshot: dataSnapshot.getChildren()){
+                    Usuario usuario = snapshot.getValue(Usuario.class);
+                    usuariosSistema.add(usuario);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        }); return usuariosSistema;
     }
 
     public void iniciarParametros(){
@@ -183,6 +220,53 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public ArrayList<Ubicacion> solicitarUbicaciones(){
+        final ArrayList<Ubicacion> ubicaciones = new ArrayList<>();
+        databaseReference.child(VariablesUnicas.USUARIO_FI).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for(DataSnapshot data: dataSnapshot.getChildren()){
+                    Ubicacion ubicacion = data.getValue(Ubicacion.class);
+                    System.out.println("Ubicacion: " + ubicacion.toString());
+                    ubicaciones.add(ubicacion);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        return ubicaciones;
+    }
+
+    public ArrayList<Estacion> solicitarEstaciones(){
+        final ArrayList<Estacion> estaciones = new ArrayList<>();
+        databaseReference.child(VariablesUnicas.ESTACIONES_FI).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot s: dataSnapshot.getChildren()
+                     ) {
+                    Estacion e = s.getValue(Estacion.class);
+                    System.out.println("Estacion: " + e.toString());
+                    estaciones.add(e);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        return estaciones;
+    }
 
 
+    public static ArrayList<Ubicacion> getUbicaciones() {
+        return ubicaciones;
+    }
+
+    public static ArrayList<Estacion> getEstaciones() {
+        return estaciones;
+    }
 }

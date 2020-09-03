@@ -1,8 +1,5 @@
 package com.example.oxygen.Fragments;
 
-import android.content.Intent;
-import android.graphics.LinearGradient;
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -11,20 +8,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
-import com.example.oxygen.Fragments.ProfileFragment;
 import com.example.oxygen.ObjetosNat.Estacion;
-import com.example.oxygen.ObjetosNat.FirebaseDatos;
 import com.example.oxygen.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import org.w3c.dom.Text;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 
 
@@ -91,7 +80,6 @@ public class EstacionsFragment extends Fragment {
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
         //System.out.println(info_user.get("idModulo"));
         //databaseReference.child(FirebaseDatos.ESTACIONES_FI).setValue(info_user.get("idModulo"));
-        Estacion estacion = new Estacion(2,2,"50",5,"45");
 
 //        System.out.println(info_user.get("user_name"));//databaseReference.child(info_user.get("idModulo")).setValue(estacion);
         /*ArrayList<Estacion> estaciones = (ArrayList<Estacion>) getArguments().getSerializable("estaciones_user");

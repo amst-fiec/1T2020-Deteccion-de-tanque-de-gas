@@ -11,12 +11,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.oxygen.ObjetosNat.FirebaseDatos;
-import com.example.oxygen.ObjetosNat.Tanque;
+import com.example.oxygen.ObjetosNat.Estacion;
 import com.example.oxygen.ObjetosNat.Ubicacion;
+import com.example.oxygen.ObjetosNat.Usuario;
+import com.example.oxygen.ObjetosNat.VariablesUnicas;
+import com.example.oxygen.ObjetosNat.Tanque;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -67,12 +68,23 @@ public class AgregarEstacionFragment extends Fragment {
             public void onClick(View view) {
                 txt_Nombre = (EditText)v.findViewById(R.id.txt_nombre_estacion);
                 txt_descripcion = (EditText)v.findViewById(R.id.txt_descripcion);
-                txt_codigo = (EditText)v.findViewById(R.id.txt_descripcion);
+                txt_codigo = (EditText)v.findViewById(R.id.txt_codigo);
                 txt_ubicacion = (EditText)v.findViewById(R.id.txt_ubicacion);
                 txt_habitacion = (EditText)v.findViewById(R.id.txt_habitacion);
                 txt_piso = (EditText)v.findViewById(R.id.txt_piso);
                 txt_vol = (EditText)v.findViewById(R.id.txt_volumen);
-                String contenidoT = "Oxigeno";
+                //String contenidoT = "Oxigeno";
+                String nombreE = txt_Nombre.getText().toString();
+                String descripcion = txt_descripcion.getText().toString();
+                String codigo = txt_codigo.getText().toString();
+                String ubicacion = txt_ubicacion.getText().toString();
+                String habitacion = txt_habitacion.getText().toString();
+                int habitacionA = Integer.parseInt(habitacion);
+                int piso = Integer.parseInt(txt_piso.getText().toString());
+                String volumenInicial = txt_vol.getText().toString();
+
+                Estacion estacion = new Estacion(nombreE,volumenInicial,"","",codigo,1,MainActivity.getUsuario().getIdUser());
+                Ubicacion ubicacion1 = new Ubicacion(ubicacion,habitacionA,1,piso);
                 if(txt_Nombre.getText().toString().isEmpty() || txt_codigo.getText().toString().isEmpty() || txt_ubicacion.getText().toString().isEmpty() || txt_habitacion.getText().toString().isEmpty() ||
                         txt_piso.getText().toString().isEmpty() || txt_vol.getText().toString().isEmpty() || txt_descripcion.getText().toString().isEmpty()){
                     Toast.makeText(getActivity(), "Datos incompletos", Toast.LENGTH_SHORT).show();
@@ -81,27 +93,13 @@ public class AgregarEstacionFragment extends Fragment {
                     Toast.makeText(getActivity(), "Estación añadida", Toast.LENGTH_SHORT).show();
                     String idUser = info_user.get("user_id");
 
-                    //Agregar Tanque
+                    //Estacion estacion = new Estacion();
+                    databaseReference.child(VariablesUnicas.ESTACIONES_FI).child(codigo).setValue(estacion);
+                    databaseReference.child(VariablesUnicas.UBICACIONES_FI).child("1").setValue(ubicacion1);
+                    Usuario usuarioEs = MainActivity.getUsuario();
+                    usuarioEs.agregarEstacion(estacion);
+                    databaseReference.child(VariablesUnicas.USUARIO_FI).child(usuarioEs.getIdUser()).child("Estaciones").child("1").setValue(estacion.getIdModulo());
 
-                    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
-                    DatabaseReference tanques = databaseReference.child(FirebaseDatos.TANQUES_FI);
-                    DatabaseReference idU_reference = tanques.child(idUser);
-                    DatabaseReference newId_reference = idU_reference.push();
-                    Tanque tanque = new Tanque(contenidoT,txt_vol.getText().toString());
-                    newId_reference.setValue(tanque);
-
-
-                    String reference_newId = newId_reference.getKey();
-
-                    //Agregar Ubicacion
-                    DatabaseReference ubicaciones = databaseReference.child(FirebaseDatos.UBICACIONES_FI);
-                    String ciudad = "Guayaquil";
-                    int habitacion = Integer.parseInt(txt_habitacion.getText().toString());
-                    String nombreHospital = "IEES";
-                    int piso = Integer.parseInt(txt_piso.getText().toString());
-                    Ubicacion ubicacion = new Ubicacion(ciudad,habitacion,nombreHospital,piso);
-                    DatabaseReference idU_reference_Hubica = ubicaciones.child(idUser);
-                    idU_reference_Hubica.child(reference_newId).setValue(ubicacion);
                 }
 
 

@@ -1,73 +1,51 @@
 package com.example.oxygen.ObjetosNat;
 
 public class Estacion {
-
-    private int idTanque;
-    private int idUbicacion;
-    private String nombreEstacion;
-    private String pesoMedido;
-    private int pesoVacio;
+    private String nombre;
+    private String volumenInicial;
+    private String volumenMedido;
     private String porcentajeBateria;
+    private String idModulo;
+    private int idUbicacion;
+    private String idUsuario;
 
+    public Estacion(String nombre, String volumenInicial, String volumenMedido, String porcentajeBateria, String idModulo, int idUbicacion, String idUsuario) {
+        this.nombre = nombre;
+        this.volumenInicial = volumenInicial;
+        this.volumenMedido = volumenMedido;
+        this.porcentajeBateria = porcentajeBateria;
+        this.idModulo = idModulo;
+        this.idUbicacion = idUbicacion;
+        this.idUsuario = idUsuario;
+    }
 
     public Estacion(){
 
     }
-    public Estacion(int idTanque, int idUbicacion, String pesoMedido, int pesoVacio, String porcentajeBateria) {
-        this.idTanque = idTanque;
-        this.idUbicacion = idUbicacion;
-        this.pesoMedido = pesoMedido;
-        this.pesoVacio = pesoVacio;
-        this.porcentajeBateria = porcentajeBateria;
+
+
+    public String getNombre() {
+        return nombre;
     }
 
-    public Estacion(int idTanque, int idUbicacion, String nombreEstacion, String pesoMedido, int pesoVacio, String porcentajeBateria) {
-        this.idTanque = idTanque;
-        this.idUbicacion = idUbicacion;
-        this.nombreEstacion = nombreEstacion;
-        this.pesoMedido = pesoMedido;
-        this.pesoVacio = pesoVacio;
-        this.porcentajeBateria = porcentajeBateria;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getNombreEstacion() {
-        return nombreEstacion;
+    public String getVolumenInicial() {
+        return volumenInicial;
     }
 
-    public void setNombreEstacion(String nombreEstacion) {
-        this.nombreEstacion = nombreEstacion;
+    public void setVolumenInicial(String volumenInicial) {
+        this.volumenInicial = volumenInicial;
     }
 
-    public int getIdTanque() {
-        return idTanque;
+    public String getVolumenMedido() {
+        return volumenMedido;
     }
 
-    public void setIdTanque(int idTanque) {
-        this.idTanque = idTanque;
-    }
-
-    public int getIdUbicacion() {
-        return idUbicacion;
-    }
-
-    public void setIdUbicacion(int idUbicacion) {
-        this.idUbicacion = idUbicacion;
-    }
-
-    public String getPesoMedido() {
-        return pesoMedido;
-    }
-
-    public void setPesoMedido(String pesoMedido) {
-        this.pesoMedido = pesoMedido;
-    }
-
-    public int getPesoVacio() {
-        return pesoVacio;
-    }
-
-    public void setPesoVacio(int pesoVacio) {
-        this.pesoVacio = pesoVacio;
+    public void setVolumenMedido(String volumenMedido) {
+        this.volumenMedido = volumenMedido;
     }
 
     public String getPorcentajeBateria() {
@@ -78,14 +56,27 @@ public class Estacion {
         this.porcentajeBateria = porcentajeBateria;
     }
 
-    @Override
-    public String toString() {
-        return "Estacion{" +
-                "idTanque=" + idTanque +
-                ", idUbicacion=" + idUbicacion +
-                ", pesoMedido='" + pesoMedido + '\'' +
-                ", pesoVacio=" + pesoVacio +
-                ", porcentajeBateria='" + porcentajeBateria + '\'' +
-                '}';
+    public String getIdModulo() {
+        return idModulo;
+    }
+
+    public void setIdModulo(String idModulo) {
+        this.idModulo = idModulo;
+    }
+
+    public int getIdUbicacion() {
+        return idUbicacion;
+    }
+
+    public void setIdUbicacion(int idUbicacion) {
+        this.idUbicacion = idUbicacion;
+    }
+
+    public String getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(String idUsuario) {
+        this.idUsuario = idUsuario;
     }
 }
