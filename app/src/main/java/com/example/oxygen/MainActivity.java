@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.oxygen.Fragments.EstacionsFragment;
@@ -23,8 +24,10 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
@@ -47,7 +50,10 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
     private DatabaseReference databaseReferenceTanques;
-
+    private EditText userLogin;
+    private EditText contrasena;
+    private String userString;
+    private  String password;
     private static ArrayList<Usuario> usuarios = new ArrayList<>();
     private static ArrayList<Ubicacion> ubicaciones = new ArrayList<>();
 
@@ -63,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         databaseReference = FirebaseDatabase.getInstance().getReference();
         databaseReferenceTanques = FirebaseDatabase.getInstance().getReference().child(VariablesUnicas.TANQUES_FI);
-
         iniciarParametros();
         usuarios = solicitarUsuarios();
         ubicaciones = solicitarUbicaciones();
@@ -75,11 +80,60 @@ public class MainActivity extends AppCompatActivity {
     public void registrarse(View view){
         Intent i  = new Intent(this, RegistroActivity.class);
         startActivity(i);
+        finish();
     }
 
     private void cerrarSesion(){
         mGoogleSignInClient.signOut().addOnCompleteListener(this, task -> updateUI(null));
     }
+
+    public void ingresarAplicacion(View view){
+        userLogin = findViewById(R.id.user);
+        contrasena = findViewById(R.id.pasword);
+         userString = userLogin.getText().toString();
+         password = contrasena.getText().toString();
+        if(!userString.isEmpty() && !password.isEmpty()){
+            loginUser();
+
+
+        }else{
+            Toast.makeText(MainActivity.this, "Complete los campos", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void   loginUser(){
+        mAuth.signInWithEmailAndPassword(userString,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    startActivity(new Intent(MainActivity.this,PrincipalActivity.class));
+                    getUserInfo();
+                    finish();
+                }
+                else{
+                    Toast.makeText(MainActivity.this,"No se pudo iniciar sesion, compruebe los datos", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+
+    private void getUserInfo(){
+        String id = mAuth.getCurrentUser().getUid().toString();
+        databaseReference.child(VariablesUnicas.USUARIO_FI).child(id).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists()){
+                    usuario = dataSnapshot.getValue(Usuario.class);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
 
 
     /**
@@ -215,6 +269,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void iniciarParametros(){
+
         mAuth = FirebaseAuth.getInstance();
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -254,34 +309,11 @@ public class MainActivity extends AppCompatActivity {
         return ubicaciones;
     }
 
-    /*
-    public ArrayList<Tanque> solicitarTanque(){
-        final ArrayList<Tanque> tanquesEncontrados = new ArrayList<>();
 
-        databaseReferenceTanques.child(usuario.getIdUser()).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot data: dataSnapshot.getChildren()){
-                    Tanque t = data.getValue(Tanque.class);
-                    tanquesEncontrados.add(t);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        }); return tanquesEncontrados;
-
-    }*/
     public static ArrayList<Tanque> getTanques() {
         return tanques;
 
     }
-
-
-
-
 
 
     public static ArrayList<Ubicacion> getUbicaciones() {

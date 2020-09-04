@@ -80,6 +80,7 @@
             android:background="@drawable/btn_celeste"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/ingresar"
+            android:onClick="ingresarAplicacion"
             android:textColor="@android:color/white"
             android:textSize="13sp" />
 

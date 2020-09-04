@@ -1,8 +1,9 @@
 package com.example.oxygen.ObjetosNat;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Usuario {
+public class Usuario implements Serializable {
     private String correo;
     private String idUser;
     private String imagen;
@@ -21,6 +22,8 @@ public class Usuario {
         this.imagen = imagen;
         this.nombreUsuario = nombreUsuario;
     }
+
+
 
     public String getIdUser() {
         return idUser;

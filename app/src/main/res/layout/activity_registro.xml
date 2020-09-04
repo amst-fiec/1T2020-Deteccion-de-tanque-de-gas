@@ -79,7 +79,7 @@
             android:layout_marginRight="35dp"
             android:background="@drawable/btn_celeste"
             android:fontFamily="@font/poppins_medium"
-            android:onClick="iniciarsesion"
+            android:onClick="ingresarRegistro"
             android:text="@string/ingresar"
             android:textColor="@android:color/white"
             android:textSize="13sp" />

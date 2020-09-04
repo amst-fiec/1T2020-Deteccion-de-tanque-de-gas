@@ -78,61 +78,121 @@ public class PrincipalActivity extends AppCompatActivity {
     public TreeSet<Integer> solicitarUbicacionesUser(){
         final TreeSet<Integer> idUbicacionesUsuario = new TreeSet<>();
         Usuario u = MainActivity.getUsuario();
-        databaseReference.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot d: dataSnapshot.getChildren()){
-                    String id = d.getKey().toString();
-                    Integer integer = Integer.parseInt(id);
-                    idUbicacionesUsuario.add(integer);
+        if(u != null){
+            databaseReference.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    for (DataSnapshot d: dataSnapshot.getChildren()){
+                        String id = d.getKey().toString();
+                        Integer integer = Integer.parseInt(id);
+                        idUbicacionesUsuario.add(integer);
+                    }
                 }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
 
-            }
-        }); return idUbicacionesUsuario;
+                }
+            });
+        }
+        else{
+            u = RegistroActivity.getUsuario();
+            databaseReference.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    for (DataSnapshot d: dataSnapshot.getChildren()){
+                        String id = d.getKey().toString();
+                        Integer integer = Integer.parseInt(id);
+                        idUbicacionesUsuario.add(integer);
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
+        }
+         return idUbicacionesUsuario;
     }
 
     public TreeSet<Tanque> solicitarTanque(){
         final TreeSet<Tanque> tanquesEncontrados = new TreeSet<>();
         Usuario u = MainActivity.getUsuario();
-        databaseReferenceTanques.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot data: dataSnapshot.getChildren()){
-                    Tanque t = data.getValue(Tanque.class);
-                    tanquesEncontrados.add(t);
+        if(u != null){
+            databaseReferenceTanques.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    for (DataSnapshot data: dataSnapshot.getChildren()){
+                        Tanque t = data.getValue(Tanque.class);
+                        tanquesEncontrados.add(t);
+                    }
                 }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
 
-            }
-        }); return tanquesEncontrados;
+                }
+            });
+        }else{
+            u = RegistroActivity.getUsuario();
+            databaseReferenceTanques.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    for (DataSnapshot data: dataSnapshot.getChildren()){
+                        Tanque t = data.getValue(Tanque.class);
+                        tanquesEncontrados.add(t);
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
+        }
+         return tanquesEncontrados;
 
     }
 
     public TreeSet<Ubicacion> solicitarUbicaciones(){
         final TreeSet<Ubicacion> ubicacionesEncontradas = new TreeSet<>();
         Usuario u = MainActivity.getUsuario();
-        databaseReferenceUbicaciones.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot d: dataSnapshot.getChildren()
-                     ) {
-                    Ubicacion u = d.getValue(Ubicacion.class);
-                    ubicacionesEncontradas.add(u);
+        if(u != null){
+            databaseReferenceUbicaciones.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    for (DataSnapshot d: dataSnapshot.getChildren()
+                    ) {
+                        Ubicacion u = d.getValue(Ubicacion.class);
+                        ubicacionesEncontradas.add(u);
+                    }
                 }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
 
-            }
-        });
+                }
+            });
+        }else{
+            u = RegistroActivity.getUsuario();
+            databaseReferenceUbicaciones.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    for (DataSnapshot d: dataSnapshot.getChildren()
+                    ) {
+                        Ubicacion u = d.getValue(Ubicacion.class);
+                        ubicacionesEncontradas.add(u);
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
+        }
+
         return ubicacionesEncontradas;
     }
 

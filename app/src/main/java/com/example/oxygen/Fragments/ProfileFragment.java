@@ -16,6 +16,7 @@ import com.example.oxygen.ObjetosNat.Tanque;
 import com.example.oxygen.ObjetosNat.Usuario;
 import com.example.oxygen.PrincipalActivity;
 import com.example.oxygen.R;
+import com.example.oxygen.RegistroActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.squareup.picasso.Picasso;
 
@@ -76,6 +77,7 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+       // FirebaseAuth mAuth = FirebaseAuth.getInstance();
         View mainF = inflater.inflate(R.layout.fragment_profile, container, false);
         Button btn = mainF.findViewById(R.id.btn_CerrarS);
         TextView txt_name = mainF.findViewById(R.id.txt_user);
@@ -83,12 +85,23 @@ public class ProfileFragment extends Fragment {
         ImageView imv_photo = mainF.findViewById(R.id.imv_foto);
         TextView estacionesRegistrada = mainF.findViewById(R.id.estacionesRegistradas);
         Usuario usuario = MainActivity.getUsuario();
-        TreeSet<Tanque> tanquesUsuario = PrincipalActivity.getTanques();
-        txt_name.setText(usuario.getNombreUsuario());
-        txt_email.setText(usuario.getCorreo());
-        String photo = usuario.getImagen();
-        Picasso.with(getActivity().getApplicationContext()).load(photo).into(imv_photo);
-        estacionesRegistrada.setText(String.valueOf(tanquesUsuario.size()));
+        if(usuario!= null){
+            TreeSet<Tanque> tanquesUsuario = PrincipalActivity.getTanques();
+            txt_name.setText(usuario.getNombreUsuario());
+            txt_email.setText(usuario.getCorreo());
+            String photo = usuario.getImagen();
+            Picasso.with(getActivity().getApplicationContext()).load(photo).into(imv_photo);
+            estacionesRegistrada.setText(String.valueOf(tanquesUsuario.size()));
+        }else{
+            usuario = RegistroActivity.getUsuario();
+            TreeSet<Tanque> tanquesUsuario = PrincipalActivity.getTanques();
+            txt_name.setText(usuario.getNombreUsuario());
+            txt_email.setText(usuario.getCorreo());
+            String photo = usuario.getImagen();
+            Picasso.with(getActivity().getApplicationContext()).load(photo).into(imv_photo);
+            estacionesRegistrada.setText(String.valueOf(tanquesUsuario.size()));
+        }
+
 
         cerrarS(btn);
         return mainF;
@@ -103,6 +116,7 @@ public class ProfileFragment extends Fragment {
                 Intent i = new Intent(getActivity(),MainActivity.class);
                 i.putExtra("msg","cerrarSesion");
                 startActivity(i);
+
             }
         });
     }

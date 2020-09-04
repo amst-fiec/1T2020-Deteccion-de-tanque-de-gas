@@ -92,7 +92,7 @@ public class AgregarEstacionFragment extends Fragment {
                 }
                 else{
                     Toast.makeText(getActivity(), "Estación añadida", Toast.LENGTH_SHORT).show();
-                    String idUser = info_user.get("user_id");
+                  //  String idUser = info_user.get("user_id");
 
                     //Estacion estacion = new Estacion();
                    // databaseReference.child(VariablesUnicas.ESTACIONES_FI).child(codigo).setValue(estacion);
