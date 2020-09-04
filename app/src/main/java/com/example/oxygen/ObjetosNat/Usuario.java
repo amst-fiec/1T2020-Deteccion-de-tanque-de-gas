@@ -7,8 +7,9 @@ public class Usuario {
     private String idUser;
     private String imagen;
     private String nombreUsuario;
-    private ArrayList<Estacion> Estaciones = new ArrayList<Estacion>();
+    //private ArrayList<Estacion> Estaciones = new ArrayList<Estacion>();
     //private DataSnapshot dataSnapshot;
+    //private ArrayList<String> estaciones = new ArrayList<>();
 
 
     public Usuario() {
@@ -19,7 +20,6 @@ public class Usuario {
         this.idUser = idUser;
         this.imagen = imagen;
         this.nombreUsuario = nombreUsuario;
-        Estaciones = getEstaciones();
     }
 
     public String getIdUser() {
@@ -54,24 +54,19 @@ public class Usuario {
         this.nombreUsuario = nombreUsuario;
     }
 
-    public ArrayList<Estacion> getEstaciones() {
-        return Estaciones;
-    }
 
-    public void setEstaciones(ArrayList<Estacion> estaciones) {
-        Estaciones = estaciones;
-    }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Usuario usuario = (Usuario) o;
-        return idUser.equals(usuario.idUser);
-    }
-
-    public void agregarEstacion(Estacion estacion){
-        Estaciones.add(estacion);
+       if(o!= null){
+           if(o instanceof Usuario){
+               Usuario u = (Usuario)o;
+               if(this.idUser == u.getIdUser()){
+                   return true;
+               }
+           }
+       }
+       return false;
     }
 
     @Override

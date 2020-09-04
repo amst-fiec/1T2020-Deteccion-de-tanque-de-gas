@@ -12,11 +12,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.oxygen.MainActivity;
+import com.example.oxygen.ObjetosNat.Tanque;
+import com.example.oxygen.ObjetosNat.Usuario;
+import com.example.oxygen.PrincipalActivity;
 import com.example.oxygen.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.TreeSet;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -74,20 +79,16 @@ public class ProfileFragment extends Fragment {
         View mainF = inflater.inflate(R.layout.fragment_profile, container, false);
         Button btn = mainF.findViewById(R.id.btn_CerrarS);
         TextView txt_name = mainF.findViewById(R.id.txt_user);
-         TextView txt_email = mainF.findViewById(R.id.txt_email);
+        TextView txt_email = mainF.findViewById(R.id.txt_email);
         ImageView imv_photo = mainF.findViewById(R.id.imv_foto);
-        //DatabaseReference db_reference = FirebaseDatabase.getInstance().getReference().child(FirebaseDatos.ESTACIONES_FI);
-
-
-        System.out.println("HolaMundo");
-        HashMap<String,String> info_user = (HashMap<String, String>) getArguments().getSerializable("info_user");
-        System.out.println(info_user);
-        System.out.println(info_user.get("user_name"));
-        System.out.println(info_user.get("idModulo"));
-        txt_name.setText(info_user.get("user_name"));
-        txt_email.setText(info_user.get("user_email"));
-        String photo = info_user.get("user_photo");
+        TextView estacionesRegistrada = mainF.findViewById(R.id.estacionesRegistradas);
+        Usuario usuario = MainActivity.getUsuario();
+        TreeSet<Tanque> tanquesUsuario = PrincipalActivity.getTanques();
+        txt_name.setText(usuario.getNombreUsuario());
+        txt_email.setText(usuario.getCorreo());
+        String photo = usuario.getImagen();
         Picasso.with(getActivity().getApplicationContext()).load(photo).into(imv_photo);
+        estacionesRegistrada.setText(String.valueOf(tanquesUsuario.size()));
 
         cerrarS(btn);
         return mainF;

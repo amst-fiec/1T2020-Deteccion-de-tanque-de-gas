@@ -48,6 +48,18 @@ public class Ubicacion {
         this.piso = piso;
     }
 
+    public boolean equals(Object obj){
+        if(obj != null){
+            if(obj instanceof Ubicacion ){
+                Ubicacion ubicacion = (Ubicacion)obj;
+                if(this.idUbicacion == ubicacion.getIdUbicacion()){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
     @Override
     public String toString() {
         return "Ubicacion{" +

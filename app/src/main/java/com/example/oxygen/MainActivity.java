@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.renderscript.Sampler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +14,7 @@ import android.widget.Toast;
 
 import com.example.oxygen.Fragments.EstacionsFragment;
 import com.example.oxygen.Fragments.ProfileFragment;
-import com.example.oxygen.ObjetosNat.Estacion;
+import com.example.oxygen.ObjetosNat.Tanque;
 import com.example.oxygen.ObjetosNat.Ubicacion;
 import com.example.oxygen.ObjetosNat.VariablesUnicas;
 import com.example.oxygen.ObjetosNat.Usuario;
@@ -35,7 +34,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -48,12 +46,15 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_login;
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
+    private DatabaseReference databaseReferenceTanques;
+
     private static ArrayList<Usuario> usuarios = new ArrayList<>();
     private static ArrayList<Ubicacion> ubicaciones = new ArrayList<>();
-    private static ArrayList<Estacion> estaciones = new ArrayList<>();
 
 
     private static Usuario usuario;
+    private static ArrayList<Tanque> tanques;
+
     //private static Usuario usuarioActual;
 
     @Override
@@ -61,11 +62,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReferenceTanques = FirebaseDatabase.getInstance().getReference().child(VariablesUnicas.TANQUES_FI);
 
         iniciarParametros();
         usuarios = solicitarUsuarios();
         ubicaciones = solicitarUbicaciones();
-        estaciones = solicitarEstaciones();
+       // tanques = solicitarTanque();
+
 
     }
 
@@ -188,8 +191,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for(DataSnapshot snapshot: dataSnapshot.getChildren()){
-                    Usuario usuario = snapshot.getValue(Usuario.class);
-                    usuariosSistema.add(usuario);
+                    //Usuario usuario = snapshot.getValue(Usuario.class);
+                    String nombre = String.valueOf(snapshot.child("nombreUsuario").getValue());
+                    String idUser = String.valueOf(snapshot.child("idUser").getValue());
+                    String imagen = String.valueOf(snapshot.child("imagen").getValue());
+                    String correo = String.valueOf(snapshot.child("correo").getValue());
+                    DataSnapshot d = snapshot.child("Estaciones");
+                    System.out.println("Hay estaciones: " + d.toString());
+                    Usuario u = new Usuario(correo,idUser,imagen,nombre);
+                    usuariosSistema.add(u);
                 }
             }
 
@@ -240,16 +250,16 @@ public class MainActivity extends AppCompatActivity {
         return ubicaciones;
     }
 
-    public ArrayList<Estacion> solicitarEstaciones(){
-        final ArrayList<Estacion> estaciones = new ArrayList<>();
-        databaseReference.child(VariablesUnicas.ESTACIONES_FI).addValueEventListener(new ValueEventListener() {
+    /*
+    public ArrayList<Tanque> solicitarTanque(){
+        final ArrayList<Tanque> tanquesEncontrados = new ArrayList<>();
+
+        databaseReferenceTanques.child(usuario.getIdUser()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot s: dataSnapshot.getChildren()
-                     ) {
-                    Estacion e = s.getValue(Estacion.class);
-                    System.out.println("Estacion: " + e.toString());
-                    estaciones.add(e);
+                for (DataSnapshot data: dataSnapshot.getChildren()){
+                    Tanque t = data.getValue(Tanque.class);
+                    tanquesEncontrados.add(t);
                 }
             }
 
@@ -257,16 +267,21 @@ public class MainActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
-        });
-        return estaciones;
+        }); return tanquesEncontrados;
+
+    }*/
+    public static ArrayList<Tanque> getTanques() {
+        return tanques;
+
     }
+
+
+
+
 
 
     public static ArrayList<Ubicacion> getUbicaciones() {
         return ubicaciones;
     }
 
-    public static ArrayList<Estacion> getEstaciones() {
-        return estaciones;
-    }
 }

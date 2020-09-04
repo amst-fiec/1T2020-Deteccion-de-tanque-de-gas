@@ -1,27 +1,97 @@
 package com.example.oxygen.ObjetosNat;
 
-public class Tanque {
-    private String contenido;
-    private String volumenIinicial;
+import java.io.Serializable;
+import java.util.Objects;
 
-    public Tanque(String contenido, String volumenIinicial) {
-        this.contenido = contenido;
-        this.volumenIinicial = volumenIinicial;
+public class Tanque implements Comparable<Tanque>, Serializable {
+    private String idModulo;
+    private int idUbicacion;
+    private String nombre;
+    private String porcentajeBateria;
+    private String volumenInicial;
+    private String volumenMedido;
+
+    public Tanque() {
     }
 
-    public String getContenido() {
-        return contenido;
+    public Tanque(String idModulo, int idUbicacion, String nombre, String porcentajeBateria, String volumenInicial, String volumenMedido) {
+        this.idModulo = idModulo;
+        this.idUbicacion = idUbicacion;
+        this.nombre = nombre;
+        this.porcentajeBateria = porcentajeBateria;
+        this.volumenInicial = volumenInicial;
+        this.volumenMedido = volumenMedido;
     }
 
-    public void setContenido(String contenido) {
-        this.contenido = contenido;
+
+
+    public String getIdModulo() {
+        return idModulo;
     }
 
-    public String getVolumenIinicial() {
-        return volumenIinicial;
+    public void setIdModulo(String idModulo) {
+        this.idModulo = idModulo;
     }
 
-    public void setVolumenIinicial(String volumenIinicial) {
-        this.volumenIinicial = volumenIinicial;
+    public int getIdUbicacion() {
+        return idUbicacion;
+    }
+
+    public void setIdUbicacion(int idUbicacion) {
+        this.idUbicacion = idUbicacion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getPorcentajeBateria() {
+        return porcentajeBateria;
+    }
+
+    public void setPorcentajeBateria(String porcentajeBateria) {
+        this.porcentajeBateria = porcentajeBateria;
+    }
+
+    public String getVolumenInicial() {
+        return volumenInicial;
+    }
+
+    public void setVolumenInicial(String volumenInicial) {
+        this.volumenInicial = volumenInicial;
+    }
+
+    public String getVolumenMedido() {
+        return volumenMedido;
+    }
+
+    public void setVolumenMedido(String volumenMedido) {
+        this.volumenMedido = volumenMedido;
+    }
+
+    public boolean equals(Object object){
+        if(object != null){
+            if(object instanceof  Tanque){
+                Tanque t = (Tanque)object;
+                if(this.idModulo == t.getIdModulo()){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+
+
+
+
+
+    @Override
+    public int compareTo(Tanque tanque) {
+        return this.idModulo.compareTo(tanque.idModulo);
     }
 }

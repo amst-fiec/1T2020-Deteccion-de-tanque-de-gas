@@ -1,5 +1,6 @@
 package com.example.oxygen.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -8,13 +9,21 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
-import com.example.oxygen.ObjetosNat.Estacion;
+import com.example.oxygen.InforTanque;
+import com.example.oxygen.MainActivity;
+import com.example.oxygen.ObjetosNat.Tanque;
+import com.example.oxygen.ObjetosNat.Usuario;
+import com.example.oxygen.PrincipalActivity;
 import com.example.oxygen.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.TreeSet;
 
 
 public class EstacionsFragment extends Fragment {
@@ -74,15 +83,52 @@ public class EstacionsFragment extends Fragment {
         //añadir los layouts con la información de las vistas
         int id = R.layout.layout_estacion; //layout con datos de la estación
 
-        //datos obtenidos del usuario
-        HashMap<String,String> info_user = (HashMap<String, String>) getArguments().getSerializable("info_user");
+        Usuario usuario = MainActivity.getUsuario();
+        TreeSet<Tanque> tanquesUsuario = PrincipalActivity.getTanques();
 
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
-        //System.out.println(info_user.get("idModulo"));
-        //databaseReference.child(FirebaseDatos.ESTACIONES_FI).setValue(info_user.get("idModulo"));
+        if(tanquesUsuario !=null){
+            for (Tanque tanque: tanquesUsuario
+                 ) {
+                //Tanque tanque = tanquesUsuario.get(i);
+                String idModulo = tanque.getIdModulo();
+                String volumenActual = tanque.getVolumenMedido();
+                String volumenInicial = tanque.getVolumenInicial();
 
-//        System.out.println(info_user.get("user_name"));//databaseReference.child(info_user.get("idModulo")).setValue(estacion);
+                RelativeLayout relativeLayout = (RelativeLayout)inflater.inflate(id,null,false);
+                TextView titulo = (TextView)relativeLayout.findViewById(R.id.titulo_estacion) ;
+                String titulo_id = "Tanque: " + idModulo;
+                titulo.setText(titulo_id);
+
+                int porcentaje = (int)((Integer.parseInt(volumenActual)*100)/(Integer.parseInt(volumenInicial)));
+                TextView prctjEstacion = (TextView)relativeLayout.findViewById(R.id.porcentaje);
+                String porcentaje_str = porcentaje + "%";
+                prctjEstacion.setText(porcentaje_str);
+
+                com.ramijemli.percentagechartview.PercentageChartView pcv = (com.ramijemli.percentagechartview.PercentageChartView)relativeLayout.findViewById(R.id.pcv_oxigeno);
+                pcv.setProgress(porcentaje,true);
+
+                linearLayout.addView(relativeLayout);
+                TextView txt = new TextView(getActivity()); //Textview para generar un espacio entre los elementos del linearLayout):
+                linearLayout.addView(txt);
+
+                relativeLayout.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent i = new Intent(getContext(), InforTanque.class);
+                        //i.putExtra("tanque",Tanque);
+                        i.putExtra("tanque",tanque);
+                        getActivity().startActivity(i);
+
+                    }
+                });
+
+            }
+        }
+
+
         /*ArrayList<Estacion> estaciones = (ArrayList<Estacion>) getArguments().getSerializable("estaciones_user");
+
+
         if (estaciones!= null){
             int numEstaciones = estaciones.size();
             for (int i = 0;i <numEstaciones; i++){
