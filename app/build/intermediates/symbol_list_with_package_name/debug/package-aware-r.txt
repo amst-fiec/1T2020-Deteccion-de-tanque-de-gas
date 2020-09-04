@@ -1408,6 +1408,7 @@ drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
 drawable btn_plomo
+drawable btn_plomo_darker
 drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
@@ -1456,6 +1457,9 @@ drawable ic_baseline_find_in_page_24
 drawable ic_baseline_fingerprint_24
 drawable ic_baseline_group_work_24
 drawable ic_baseline_location_on_24
+drawable ic_baseline_lock_24
+drawable ic_baseline_mail_outline_24
+drawable ic_baseline_perm_identity_24
 drawable ic_baseline_square_foot_24
 drawable ic_baseline_subject_24
 drawable ic_calendar_black_24dp
@@ -1589,8 +1593,13 @@ id botton_menu
 id bounce
 id btn_CerrarS
 id btn_agregarEstacion
+id btn_cancelar
 id btn_editar
+id btn_ingresar
 id btn_iniciarsesion
+id btn_iniciarsesion2
+id btn_obtenerUbicacion
+id btn_verUbicacion
 id buttonPanel
 id cancel_action
 id cancel_button
@@ -1603,6 +1612,7 @@ id checked
 id chip
 id chip_group
 id chronometer
+id clave
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -1620,7 +1630,9 @@ id contenedor_profile
 id content
 id contentPanel
 id coordinator
+id correo
 id counter_clockwise
+id creditos
 id custom
 id customPanel
 id cut
@@ -1640,7 +1652,6 @@ id dimensions
 id direct
 id disableHome
 id divider
-id divider2
 id divider3
 id divider4
 id divider5
@@ -1669,6 +1680,7 @@ id fitToContents
 id fixed
 id fondo
 id forever
+id formulario
 id fragment_estaciones
 id frameLayout
 id ghost_view
@@ -1757,6 +1769,7 @@ id parent
 id parentPanel
 id parent_matrix
 id password_toggle
+id pasword
 id pcv_oxigeno
 id pcv_volumen
 id peekHeight
@@ -1768,6 +1781,7 @@ id progress_circular
 id progress_horizontal
 id radial
 id radio
+id registro
 id right
 id right_icon
 id right_side
@@ -1839,7 +1853,6 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id textView11
 id textView12
 id textView17
@@ -1870,6 +1883,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id txt_Ubicacion
 id txt_alerta
 id txt_codigo
 id txt_descripcion
@@ -1886,7 +1900,6 @@ id txt_pisoEstacion
 id txt_porcentBateria
 id txt_porcentBateriaEst
 id txt_porcentaje
-id txt_ubicacion
 id txt_ubicacionEstacion
 id txt_user
 id txt_vActual
@@ -1899,6 +1912,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user
+id usuario
 id view_offset_helper
 id visible
 id wide
@@ -1969,6 +1984,7 @@ layout abc_tooltip
 layout activity_infor_tanque
 layout activity_main
 layout activity_principal
+layout activity_registro
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2128,10 +2144,12 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string habAddEstacion
+string habitacion
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string infor_estacion
+string ingresar
 string iniciarsesion
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
@@ -2169,6 +2187,7 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string nombre
 string nombre_estacion
+string obtenerUbicacion
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -2177,6 +2196,7 @@ string path_password_strike_through
 string pisoAddegarEstacion
 string porcentaje_volumen
 string project_id
+string registrarse
 string search_menu_title
 string status_bar_notification_info_overflow
 string todo
@@ -2189,6 +2209,7 @@ string txt_prctBateria
 string txt_ubicacion
 string txt_volActual
 string txt_volInicial
+string ubicacionTanque
 string user_name
 string volumen
 style AlertDialog_AppCompat

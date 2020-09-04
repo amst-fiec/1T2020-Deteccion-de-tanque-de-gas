@@ -72,6 +72,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void registrarse(View view){
+        Intent i  = new Intent(this, RegistroActivity.class);
+        startActivity(i);
+    }
 
     private void cerrarSesion(){
         mGoogleSignInClient.signOut().addOnCompleteListener(this, task -> updateUI(null));

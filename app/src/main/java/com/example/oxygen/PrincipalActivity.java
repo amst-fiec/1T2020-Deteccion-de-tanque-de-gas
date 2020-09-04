@@ -12,6 +12,7 @@ import com.example.oxygen.Fragments.EstacionesFragment;
 import com.example.oxygen.Fragments.EstacionsFragment;
 import com.example.oxygen.Fragments.ProfileFragment;
 import com.example.oxygen.ObjetosNat.Tanque;
+import com.example.oxygen.ObjetosNat.Ubicacion;
 import com.example.oxygen.ObjetosNat.Usuario;
 import com.example.oxygen.ObjetosNat.VariablesUnicas;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -31,9 +32,13 @@ public class PrincipalActivity extends AppCompatActivity {
     Bundle args;
    private static TreeSet<Integer> idUbicacionesUser;
    private static TreeSet<Tanque> tanques;
+    private static TreeSet<Ubicacion> ubicaciones;
+
 
     DatabaseReference databaseReference;
     DatabaseReference databaseReferenceTanques;
+    DatabaseReference databaseReferenceUbicaciones;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +47,11 @@ public class PrincipalActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.botton_menu);
         databaseReference = FirebaseDatabase.getInstance().getReference().child(VariablesUnicas.UBICACIONES_FI);
         databaseReferenceTanques = FirebaseDatabase.getInstance().getReference().child(VariablesUnicas.TANQUES_FI);
+        databaseReferenceUbicaciones = FirebaseDatabase.getInstance().getReference().child(VariablesUnicas.UBICACIONES_FI);
         idUbicacionesUser = new TreeSet<>();
         idUbicacionesUser = solicitarUbicacionesUser();
         tanques = solicitarTanque();
+        ubicaciones = solicitarUbicaciones();
         args = new Bundle();
         //args.putString("ejemplo", ejemplo);
 
@@ -106,6 +113,31 @@ public class PrincipalActivity extends AppCompatActivity {
             }
         }); return tanquesEncontrados;
 
+    }
+
+    public TreeSet<Ubicacion> solicitarUbicaciones(){
+        final TreeSet<Ubicacion> ubicacionesEncontradas = new TreeSet<>();
+        Usuario u = MainActivity.getUsuario();
+        databaseReferenceUbicaciones.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot d: dataSnapshot.getChildren()
+                     ) {
+                    Ubicacion u = d.getValue(Ubicacion.class);
+                    ubicacionesEncontradas.add(u);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        return ubicacionesEncontradas;
+    }
+
+    public static TreeSet<Ubicacion> getUbicaciones() {
+        return ubicaciones;
     }
 
     public static TreeSet<Integer> getIdUbicacionesUser() {

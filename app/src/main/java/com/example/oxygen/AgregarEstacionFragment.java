@@ -71,7 +71,7 @@ public class AgregarEstacionFragment extends Fragment {
                 txt_Nombre = (EditText)v.findViewById(R.id.txt_nombre_estacion);
                 txt_descripcion = (EditText)v.findViewById(R.id.txt_descripcion);
                 txt_codigo = (EditText)v.findViewById(R.id.txt_codigo);
-                txt_ubicacion = (EditText)v.findViewById(R.id.txt_ubicacion);
+                txt_ubicacion = (EditText)v.findViewById(R.id.txt_Ubicacion);
                 txt_habitacion = (EditText)v.findViewById(R.id.txt_habitacion);
                 txt_piso = (EditText)v.findViewById(R.id.txt_piso);
                 txt_vol = (EditText)v.findViewById(R.id.txt_volumen);

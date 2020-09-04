@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.example.oxygen.InforTanque;
 import com.example.oxygen.MainActivity;
 import com.example.oxygen.ObjetosNat.Tanque;
+import com.example.oxygen.ObjetosNat.Ubicacion;
 import com.example.oxygen.ObjetosNat.Usuario;
 import com.example.oxygen.PrincipalActivity;
 import com.example.oxygen.R;
@@ -116,7 +117,9 @@ public class EstacionsFragment extends Fragment {
                     public void onClick(View view) {
                         Intent i = new Intent(getContext(), InforTanque.class);
                         //i.putExtra("tanque",Tanque);
+                        Ubicacion ubicacionTanque = obtenerUbicacionTanque(tanque);
                         i.putExtra("tanque",tanque);
+                        i.putExtra("ubicacion",ubicacionTanque);
                         getActivity().startActivity(i);
 
                     }
@@ -203,6 +206,18 @@ public class EstacionsFragment extends Fragment {
 
     */
         return v;
+    }
+
+    public Ubicacion obtenerUbicacionTanque(Tanque t){
+        TreeSet<Ubicacion> ubicaciones = PrincipalActivity.getUbicaciones();
+
+        for (Ubicacion u: ubicaciones
+             ) {
+            if(u.getIdUbicacion() == t.getIdUbicacion()){
+                return u;
+            }
+        }
+        return null;
     }
 
     @Override

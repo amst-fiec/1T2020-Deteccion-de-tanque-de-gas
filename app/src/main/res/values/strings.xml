@@ -33,7 +33,12 @@
     <string name="txt_habitacion">Habitación:</string>
     <string name="txt_prctBateria">Batería:</string>
     <string name="editar"> Editar estación</string>
-    <string name="habAddEstacion">Habitacion</string>
+    <string name="habAddEstacion">Ubicacion</string>
     <string name="pisoAddegarEstacion">Piso</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="ubicacionTanque">"Ver Ubicacion "</string>
+    <string name="habitacion">Habitacion</string>
+    <string name="obtenerUbicacion">Obtener Ubicacion</string>
 
 </resources>

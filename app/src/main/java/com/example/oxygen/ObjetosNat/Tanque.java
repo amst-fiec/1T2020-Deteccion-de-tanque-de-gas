@@ -77,17 +77,13 @@ public class Tanque implements Comparable<Tanque>, Serializable {
         if(object != null){
             if(object instanceof  Tanque){
                 Tanque t = (Tanque)object;
-                if(this.idModulo == t.getIdModulo()){
+                if(this.idModulo == t.getIdModulo() && this.volumenMedido == t.getVolumenMedido()){
                     return true;
                 }
             }
         }
         return false;
     }
-
-
-
-
 
 
     @Override

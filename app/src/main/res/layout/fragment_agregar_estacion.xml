@@ -115,25 +115,47 @@
                 android:paddingRight="10dp"
                 android:textSize="14sp" />
 
-            <EditText
-                android:id="@+id/txt_ubicacion"
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/fondo_informacion"
-                android:drawablePadding="10dp"
-                android:ems="10"
-                android:fontFamily="@font/poppins"
-                android:hint="@string/btn_agregarUbicacion"
-                android:inputType="textPersonName"
-                android:maxLength="15"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:textSize="14sp" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txt_Ubicacion"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fondo_informacion"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center_vertical"
+                    android:hint="@string/habAddEstacion"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_obtenerUbicacion"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_plomo_darker"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center_vertical"
+                    android:hint="@string/obtenerUbicacion"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -151,7 +173,7 @@
                     android:background="@drawable/fondo_informacion"
                     android:fontFamily="@font/poppins"
                     android:gravity="center_vertical"
-                    android:hint="@string/habAddEstacion"
+                    android:hint="@string/habitacion"
                     android:inputType="number"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"

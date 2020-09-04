@@ -1,6 +1,8 @@
 package com.example.oxygen.ObjetosNat;
 
-public class Ubicacion {
+import java.io.Serializable;
+
+public class Ubicacion implements Comparable<Ubicacion>, Serializable {
     private String ciudad;
     private int habitacion;
     private int idUbicacion;
@@ -68,5 +70,10 @@ public class Ubicacion {
                 ", idUbicacion=" + idUbicacion +
                 ", piso=" + piso +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Ubicacion ubicacion) {
+        return  new Integer(this.idUbicacion).compareTo(new Integer(ubicacion.idUbicacion));
     }
 }
