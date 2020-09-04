@@ -32,12 +32,12 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_baseline_find_in_page_24.png"
     },
     {
-        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_baseline_lock_24.png.flat",
-        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_baseline_lock_24.png"
-    },
-    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/layout_fragment_profile.xml.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_baseline_lock_24.png.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_baseline_lock_24.png"
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_baseline_fingerprint_24.png.flat",
@@ -52,12 +52,12 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_baseline_add_circle_outline_24.png"
     },
     {
-        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable_btn_plomo.xml.flat",
-        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/drawable/btn_plomo.xml"
-    },
-    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable_btn_plomo.xml.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/drawable/btn_plomo.xml"
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_baseline_location_on_24.png.flat",
@@ -68,16 +68,20 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-mdpi/ic_baseline_mail_outline_24.png"
     },
     {
-        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_baseline_blur_on_24.png.flat",
-        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_baseline_blur_on_24.png"
-    },
-    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_baseline_face_24.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-mdpi/ic_baseline_face_24.png"
     },
     {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_baseline_blur_on_24.png.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_baseline_blur_on_24.png"
+    },
+    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_launcher_background.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_baseline_mail_outline_24.png.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-ldpi/ic_baseline_mail_outline_24.png"
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_baseline_subject_24.png.flat",
@@ -86,10 +90,6 @@
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_baseline_battery_full_24.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_baseline_battery_full_24.png"
-    },
-    {
-        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_baseline_mail_outline_24.png.flat",
-        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-ldpi/ic_baseline_mail_outline_24.png"
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_baseline_find_in_page_24.png.flat",
@@ -116,12 +116,12 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_baseline_perm_identity_24.png"
     },
     {
-        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable_usuarioicono.png.flat",
-        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/drawable/usuarioicono.png"
-    },
-    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_baseline_lock_24.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_baseline_lock_24.png"
+    },
+    {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable_usuarioicono.png.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/drawable/usuarioicono.png"
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_baseline_add_circle_outline_24.xml.flat",
@@ -168,12 +168,12 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/drawable-xhdpi/ic_action_name2.png"
     },
     {
-        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_baseline_find_in_page_24.png.flat",
-        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_baseline_find_in_page_24.png"
-    },
-    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_baseline_perm_identity_24.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-mdpi/ic_baseline_perm_identity_24.png"
+    },
+    {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_baseline_find_in_page_24.png.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_baseline_find_in_page_24.png"
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_baseline_perm_identity_24.png.flat",
@@ -196,12 +196,12 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_baseline_fingerprint_24.png"
     },
     {
-        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
-    },
-    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_baseline_lock_24.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-hdpi/ic_baseline_lock_24.png"
+    },
+    {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_baseline_add_circle_outline_24.png.flat",
@@ -240,6 +240,10 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-ldpi/ic_baseline_face_24.png"
     },
     {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/layout_activity_maps.xml.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/layout/activity_maps.xml"
+    },
+    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
@@ -264,12 +268,12 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_baseline_location_on_24.png"
     },
     {
-        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_baseline_battery_full_24.png.flat",
-        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-mdpi/ic_baseline_battery_full_24.png"
-    },
-    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_baseline_lock_24.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-ldpi/ic_baseline_lock_24.png"
+    },
+    {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_baseline_battery_full_24.png.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-mdpi/ic_baseline_battery_full_24.png"
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -364,12 +368,12 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/drawable/animation_background.xml"
     },
     {
-        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/font_poppins.xml.flat",
-        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/font/poppins.xml"
-    },
-    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_baseline_perm_identity_24.xml.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_baseline_perm_identity_24.xml"
+    },
+    {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/font_poppins.xml.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/font/poppins.xml"
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable_btn_plomo_darker.xml.flat",
@@ -468,12 +472,12 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/layout_activity_registro.xml.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/layout/activity_registro.xml"
+    },
+    {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/menu_bottom_navigation.xml.flat",
@@ -540,28 +544,32 @@
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_baseline_face_24.png"
     },
     {
-        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_name.png.flat",
-        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/drawable-xhdpi/ic_action_name.png"
-    },
-    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_baseline_lock_24.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_baseline_lock_24.png"
+    },
+    {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_name.png.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/drawable-xhdpi/ic_action_name.png"
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/layout_spinner_item_unidad.xml.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/layout/spinner_item_unidad.xml"
     },
     {
-        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_baseline_battery_full_24.png.flat",
-        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-ldpi/ic_baseline_battery_full_24.png"
-    },
-    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_baseline_mail_outline_24.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_baseline_mail_outline_24.png"
     },
     {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_baseline_battery_full_24.png.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-ldpi/ic_baseline_battery_full_24.png"
+    },
+    {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable_circle.xml.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/drawable/circle.xml"
+    },
+    {
+        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_baseline_lock_24.xml.flat",
+        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_baseline_lock_24.xml"
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/layout_fragment_estacions.xml.flat",
@@ -570,10 +578,6 @@
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_name2.png.flat",
         "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/src/main/res/drawable-xxhdpi/ic_action_name2.png"
-    },
-    {
-        "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_baseline_lock_24.xml.flat",
-        "source": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_baseline_lock_24.xml"
     },
     {
         "merged": "/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",

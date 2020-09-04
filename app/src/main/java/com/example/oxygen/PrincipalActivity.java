@@ -97,21 +97,24 @@ public class PrincipalActivity extends AppCompatActivity {
         }
         else{
             u = RegistroActivity.getUsuario();
-            databaseReference.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    for (DataSnapshot d: dataSnapshot.getChildren()){
-                        String id = d.getKey().toString();
-                        Integer integer = Integer.parseInt(id);
-                        idUbicacionesUsuario.add(integer);
+            if(u!= null){
+                databaseReference.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        for (DataSnapshot d: dataSnapshot.getChildren()){
+                            String id = d.getKey().toString();
+                            Integer integer = Integer.parseInt(id);
+                            idUbicacionesUsuario.add(integer);
+                        }
                     }
-                }
 
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                }
-            });
+                    }
+                });
+            }
+
         }
          return idUbicacionesUsuario;
     }
@@ -136,20 +139,23 @@ public class PrincipalActivity extends AppCompatActivity {
             });
         }else{
             u = RegistroActivity.getUsuario();
-            databaseReferenceTanques.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    for (DataSnapshot data: dataSnapshot.getChildren()){
-                        Tanque t = data.getValue(Tanque.class);
-                        tanquesEncontrados.add(t);
+            if(u!= null){
+                databaseReferenceTanques.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        for (DataSnapshot data: dataSnapshot.getChildren()){
+                            Tanque t = data.getValue(Tanque.class);
+                            tanquesEncontrados.add(t);
+                        }
                     }
-                }
 
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                }
-            });
+                    }
+                });
+            }
+
         }
          return tanquesEncontrados;
 
@@ -176,21 +182,24 @@ public class PrincipalActivity extends AppCompatActivity {
             });
         }else{
             u = RegistroActivity.getUsuario();
-            databaseReferenceUbicaciones.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    for (DataSnapshot d: dataSnapshot.getChildren()
-                    ) {
-                        Ubicacion u = d.getValue(Ubicacion.class);
-                        ubicacionesEncontradas.add(u);
-                    }
-                }
+           if(u!= null){
+               databaseReferenceUbicaciones.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
+                   @Override
+                   public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                       for (DataSnapshot d: dataSnapshot.getChildren()
+                       ) {
+                           Ubicacion u = d.getValue(Ubicacion.class);
+                           ubicacionesEncontradas.add(u);
+                       }
+                   }
 
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
+                   @Override
+                   public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                }
-            });
+                   }
+               });
+           }
+
         }
 
         return ubicacionesEncontradas;

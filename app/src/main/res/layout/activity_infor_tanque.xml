@@ -321,6 +321,7 @@
                     android:layout_weight="2"
                     android:background="@drawable/btn_plomo_darker"
                     android:fontFamily="@font/poppins_medium"
+                    android:onClick="verUbicacionTanque"
                     android:text="@string/ubicacionTanque"
                     android:textSize="13sp" />
 

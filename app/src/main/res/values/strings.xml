@@ -40,5 +40,6 @@
     <string name="ubicacionTanque">"Ver Ubicacion "</string>
     <string name="habitacion">Habitacion</string>
     <string name="obtenerUbicacion">Obtener Ubicacion</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

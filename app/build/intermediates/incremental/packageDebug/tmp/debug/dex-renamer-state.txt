@@ -1,4 +1,4 @@
-#Fri Sep 04 04:05:30 ECT 2020
+#Fri Sep 04 06:41:26 ECT 2020
 base.0=/home/kevjlope/Escritorio/KevinLopez/ESPOL/AMST/Laboratorios/OtraVez/1T2020-Deteccion-de-tanques-de-gas-vacios-v3.0/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

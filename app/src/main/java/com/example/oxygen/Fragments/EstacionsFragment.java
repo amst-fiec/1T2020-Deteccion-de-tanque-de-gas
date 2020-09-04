@@ -1,6 +1,7 @@
 package com.example.oxygen.Fragments;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -19,6 +20,8 @@ import com.example.oxygen.ObjetosNat.Ubicacion;
 import com.example.oxygen.ObjetosNat.Usuario;
 import com.example.oxygen.PrincipalActivity;
 import com.example.oxygen.R;
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -81,37 +84,21 @@ public class EstacionsFragment extends Fragment {
 
         linearLayout = (ViewGroup)v.findViewById(R.id.lista_estaciones) ; //LinearLayout que contendrá las estaciones
 
-        //añadir los layouts con la información de las vistas
-        int id = R.layout.layout_estacion; //layout con datos de la estación
+
 
         Usuario usuario = MainActivity.getUsuario();
         TreeSet<Tanque> tanquesUsuario = PrincipalActivity.getTanques();
 
         if(tanquesUsuario !=null){
-            for (Tanque tanque: tanquesUsuario
-                 ) {
-                //Tanque tanque = tanquesUsuario.get(i);
-                String idModulo = tanque.getIdModulo();
-                String volumenActual = tanque.getVolumenMedido();
-                String volumenInicial = tanque.getVolumenInicial();
+            for (Tanque tanque: tanquesUsuario) {
+                RelativeLayout relativeLayout = crearLayout(tanque,inflater);
 
-                RelativeLayout relativeLayout = (RelativeLayout)inflater.inflate(id,null,false);
-                TextView titulo = (TextView)relativeLayout.findViewById(R.id.titulo_estacion) ;
-                String titulo_id = "Tanque: " + idModulo;
-                titulo.setText(titulo_id);
-
-                int porcentaje = (int)((Integer.parseInt(volumenActual)*100)/(Integer.parseInt(volumenInicial)));
-                TextView prctjEstacion = (TextView)relativeLayout.findViewById(R.id.porcentaje);
-                String porcentaje_str = porcentaje + "%";
-                prctjEstacion.setText(porcentaje_str);
-
-                com.ramijemli.percentagechartview.PercentageChartView pcv = (com.ramijemli.percentagechartview.PercentageChartView)relativeLayout.findViewById(R.id.pcv_oxigeno);
-                pcv.setProgress(porcentaje,true);
-
+                //añadir vistas al linear layout
                 linearLayout.addView(relativeLayout);
-                TextView txt = new TextView(getActivity()); //Textview para generar un espacio entre los elementos del linearLayout):
+                TextView txt = new TextView(getActivity());
                 linearLayout.addView(txt);
 
+                //direccion
                 relativeLayout.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -212,7 +199,7 @@ public class EstacionsFragment extends Fragment {
         TreeSet<Ubicacion> ubicaciones = PrincipalActivity.getUbicaciones();
 
         for (Ubicacion u: ubicaciones
-             ) {
+        ) {
             if(u.getIdUbicacion() == t.getIdUbicacion()){
                 return u;
             }
@@ -224,6 +211,46 @@ public class EstacionsFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState){
         super.onViewCreated(view,savedInstanceState);
 
+    }
+
+    /*
+    Parametros: tanque, inflater
+    Retorna: layout que muestra la información del tanque enviando por parametro
+    */
+    public RelativeLayout crearLayout(Tanque tanque, LayoutInflater inflater){
+        RelativeLayout relativeLayout;
+        String nombreModulo = tanque.getNombre();
+        String volumenActual = tanque.getVolumenMedido();
+        String volumenInicial = tanque.getVolumenInicial();
+
+        //añadir los layouts con la información de las vistas
+        int id = R.layout.layout_estacion; //layout con datos de la estación
+
+        //Inicializacion relative layout
+        relativeLayout = (RelativeLayout)inflater.inflate(id,null,false);
+        TextView titulo = (TextView)relativeLayout.findViewById(R.id.titulo_estacion) ;
+        String titulo_id = "Tanque: " + nombreModulo;
+        titulo.setText(titulo_id);
+
+        int porcentaje = (int)((Integer.parseInt(volumenActual)*100)/(Integer.parseInt(volumenInicial)));
+        TextView prctjEstacion = (TextView)relativeLayout.findViewById(R.id.porcentaje);
+        String porcentaje_str = porcentaje + "%";
+        prctjEstacion.setText(porcentaje_str);
+
+        com.ramijemli.percentagechartview.PercentageChartView pcv = (com.ramijemli.percentagechartview.PercentageChartView)relativeLayout.findViewById(R.id.pcv_oxigeno);
+        pcv.setProgress(porcentaje,true);
+
+        //mostrar alerta en caso de porcentaje menores
+        if(porcentaje < 25){
+            RelativeLayout fondo = (RelativeLayout)relativeLayout.findViewById(R.id.fondo);
+            fondo.setBackgroundResource(R.drawable.animation_background);
+            AnimationDrawable animationDrawable= (AnimationDrawable)fondo.getBackground();
+            animationDrawable.setEnterFadeDuration(1000);
+            animationDrawable.setExitFadeDuration(1000);
+            animationDrawable.start();
+        }
+
+        return relativeLayout;
     }
 
 }
