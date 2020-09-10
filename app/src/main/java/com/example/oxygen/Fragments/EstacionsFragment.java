@@ -1,6 +1,7 @@
 package com.example.oxygen.Fragments;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 
@@ -231,17 +232,33 @@ public class EstacionsFragment extends Fragment {
 
         //Inicializacion relative layout
         relativeLayout = (RelativeLayout)inflater.inflate(id,null,false);
+
+        //titulo
         TextView titulo = (TextView)relativeLayout.findViewById(R.id.titulo_estacion) ;
         String titulo_id = "Tanque: " + nombreModulo;
         titulo.setText(titulo_id);
 
-        int porcentaje = (int)((Integer.parseInt(volumenActual)*100)/(Integer.parseInt(volumenInicial)));
+        //porcentaje velostat
         TextView prctjEstacion = (TextView)relativeLayout.findViewById(R.id.porcentaje);
-        String porcentaje_str = porcentaje + "%";
-        prctjEstacion.setText(porcentaje_str);
-
         com.ramijemli.percentagechartview.PercentageChartView pcv = (com.ramijemli.percentagechartview.PercentageChartView)relativeLayout.findViewById(R.id.pcv_oxigeno);
-        pcv.setProgress(porcentaje,true);
+        int porcentaje = 0;
+
+        //verificar si se encuentra o no el tanque
+        if(Integer.parseInt(volumenActual)  == -1){
+            prctjEstacion.setText("0");
+            pcv.setProgress(0,true);
+            TextView descripcion = (TextView)relativeLayout.findViewById(R.id.descripcion_estacion);
+            String aviso = "No se encuentra tanque";
+            descripcion.setText(aviso);
+
+        }else{
+            porcentaje = (int)((Integer.parseInt(volumenActual)*100)/(Integer.parseInt(volumenInicial)));
+            String porcentaje_str = porcentaje + "%";
+            prctjEstacion.setText(porcentaje_str);
+
+            pcv = (com.ramijemli.percentagechartview.PercentageChartView)relativeLayout.findViewById(R.id.pcv_oxigeno);
+            pcv.setProgress(porcentaje,true);
+        }
 
         //mostrar alerta en caso de porcentaje menores
         if(porcentaje < 25){
@@ -253,7 +270,11 @@ public class EstacionsFragment extends Fragment {
             animationDrawable.start();
         }
 
+
+
+
         return relativeLayout;
     }
+
 
 }
