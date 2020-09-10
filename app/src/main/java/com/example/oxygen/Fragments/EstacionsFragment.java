@@ -108,12 +108,15 @@ public class EstacionsFragment extends Fragment {
                         i.putExtra("tanque",tanque);
                         i.putExtra("ubicacion",ubicacionTanque);
                         getActivity().startActivity(i);
+                        //tanquesUsuario.remove(tanque);
 
                     }
                 });
 
             }
         }
+        //tanquesUsuario.clear();
+        //tanquesUsuario = PrincipalActivity.getTanques();
 
 
         /*ArrayList<Estacion> estaciones = (ArrayList<Estacion>) getArguments().getSerializable("estaciones_user");

@@ -78,11 +78,11 @@ public class EstacionesFragment extends Fragment {
         // Inflate the layout for this fragment
         View principal =  inflater.inflate(R.layout.fragment_estaciones, container, false);
 
-        System.out.println("HolaMundo");
+      //  System.out.println("HolaMundo");
         HashMap<String,String> info_user = (HashMap<String, String>) getArguments().getSerializable("info_user");
-        System.out.println(info_user);
-        System.out.println(info_user.get("user_name"));
-        System.out.println(info_user.get("idModulo"));
+      //  System.out.println(info_user);
+       // System.out.println(info_user.get("user_name"));
+       // System.out.println(info_user.get("idModulo"));
         linearLayout = (ViewGroup)principal.findViewById(R.id.lista_estaciones);
         int id = R.layout.layout_estacion;
 

@@ -83,7 +83,7 @@ public class AgregarEstacionFragment extends Fragment {
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
         txt_ubicacion = (EditText)v.findViewById(R.id.txt_Ubicacion);
         btn_obtenerUbicacion = (Button)v.findViewById(R.id.btn_obtenerUbicacion);
-       // obtenerUbicacion(btn_obtenerUbicacion,txt_ubicacion);
+       obtenerUbicacion(btn_obtenerUbicacion,txt_ubicacion);
         //databaseReference.child(FirebaseDatos.ESTACIONES_FI).child(info_user.get("idModulo")).setValue(estacion);
         btn_agregar = (Button)v.findViewById(R.id.btn_agregarEstacion);
         btn_agregar.setOnClickListener(new View.OnClickListener() {
@@ -124,7 +124,7 @@ public class AgregarEstacionFragment extends Fragment {
 
                     //String dataSnapshot = databaseReference.child(VariablesUnicas.UBICACIONES_FI).child(u.getIdUser()).getKey();
                     TreeSet<Integer> idUbicacionUser = PrincipalActivity.getIdUbicacionesUser();
-                    System.out.println("Numero de ubicaciones: " + idUbicacionUser.size());
+                   // System.out.println("Numero de ubicaciones: " + idUbicacionUser.size());
                     if(idUbicacionUser.size()>0){
                         int valor = idUbicacionUser.size() + 1 ;
                         String valorA = String.valueOf(valor);
@@ -136,7 +136,7 @@ public class AgregarEstacionFragment extends Fragment {
                         databaseReference.child(VariablesUnicas.UBICACIONES_FI).child(u.getIdUser()).child(String.valueOf(idUbicacionUser.size()+1)).setValue(ubicacion1);
 
                     }else{
-                        Tanque tanque = new Tanque(codigo,1,nombreT,"100",volumenInicial,"");
+                        Tanque tanque = new Tanque(codigo,1,nombreT,"100",volumenInicial,volumenInicial);
                         Usuario u = MainActivity.getUsuario();
                         Ubicacion ubicacion1 = new Ubicacion(ubicacion,habitacionA,1,piso,latitud,longitud);
                         databaseReference.child(VariablesUnicas.TANQUES_FI).child(u.getIdUser()).child(tanque.getIdModulo()).setValue(tanque);

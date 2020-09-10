@@ -71,12 +71,20 @@ public class PrincipalActivity extends AppCompatActivity {
         //-----------------------------------------------------------------------------------------
 
         bottomNav.setOnNavigationItemSelectedListener(navListener);
+        idUbicacionesUser.clear();
+        tanques.clear();
+        ubicaciones.clear();
 
+        idUbicacionesUser = solicitarUbicacionesUser();
+        //idUbicacionesUser = solicitarUbicacionesUser();
+        tanques= solicitarTanque();
+        ubicaciones = solicitarUbicaciones();
 
     }
 
     public TreeSet<Integer> solicitarUbicacionesUser(){
         final TreeSet<Integer> idUbicacionesUsuario = new TreeSet<>();
+        //idUbicacionesUsuario.clear();
         Usuario u = MainActivity.getUsuario();
         if(u != null){
             databaseReference.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
@@ -121,6 +129,7 @@ public class PrincipalActivity extends AppCompatActivity {
 
     public TreeSet<Tanque> solicitarTanque(){
         final TreeSet<Tanque> tanquesEncontrados = new TreeSet<>();
+        tanquesEncontrados.clear();
         Usuario u = MainActivity.getUsuario();
         if(u != null){
             databaseReferenceTanques.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {
@@ -163,6 +172,7 @@ public class PrincipalActivity extends AppCompatActivity {
 
     public TreeSet<Ubicacion> solicitarUbicaciones(){
         final TreeSet<Ubicacion> ubicacionesEncontradas = new TreeSet<>();
+        //ubicacionesEncontradas.clear();
         Usuario u = MainActivity.getUsuario();
         if(u != null){
             databaseReferenceUbicaciones.child(u.getIdUser()).addValueEventListener(new ValueEventListener() {

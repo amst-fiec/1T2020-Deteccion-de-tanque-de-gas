@@ -36,6 +36,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -72,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
         iniciarParametros();
         usuarios = solicitarUsuarios();
         ubicaciones = solicitarUbicaciones();
+        Toast t = Toast.makeText(this,"B", Toast.LENGTH_SHORT);
+        t.show();
        // tanques = solicitarTanque();
 
 
@@ -214,11 +217,14 @@ public class MainActivity extends AppCompatActivity {
 
         for (Usuario u: usuarios){
             if(u.equals(usuario)){
-                System.out.println("Usuario ya agregado");
+               // System.out.println("Usuario ya agregado");
             }else{
                 databaseReference.child(VariablesUnicas.USUARIO_FI).child(uiDUser).setValue(usuario);
             }
+
         }
+        //FirebaseMessaging.getInstance().subscribeToTopic(user.getUid());
+
 
 
         //System.out.println("Longitud: " + usuarios.size());
@@ -255,7 +261,7 @@ public class MainActivity extends AppCompatActivity {
                     String imagen = String.valueOf(snapshot.child("imagen").getValue());
                     String correo = String.valueOf(snapshot.child("correo").getValue());
                     DataSnapshot d = snapshot.child("Estaciones");
-                    System.out.println("Hay estaciones: " + d.toString());
+                  //  System.out.println("Hay estaciones: " + d.toString());
                     Usuario u = new Usuario(correo,idUser,imagen,nombre);
                     usuariosSistema.add(u);
                 }
@@ -296,7 +302,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for(DataSnapshot data: dataSnapshot.getChildren()){
                     Ubicacion ubicacion = data.getValue(Ubicacion.class);
-                    System.out.println("Ubicacion: " + ubicacion.toString());
+                    //System.out.println("Ubicacion: " + ubicacion.toString());
                     ubicaciones.add(ubicacion);
                 }
             }
