@@ -2,10 +2,14 @@ package com.example.oxygen;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -81,9 +85,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void registrarse(View view){
-        Intent i  = new Intent(this, RegistroActivity.class);
-        startActivity(i);
-        finish();
+        if(isOnLine()){
+            Intent i  = new Intent(this, RegistroActivity.class);
+            startActivity(i);
+            finish();
+        }else {
+            Toast.makeText(getApplicationContext(), "No hay conexion de internet", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     private void cerrarSesion(){
@@ -96,12 +105,25 @@ public class MainActivity extends AppCompatActivity {
          userString = userLogin.getText().toString();
          password = contrasena.getText().toString();
         if(!userString.isEmpty() && !password.isEmpty()){
-            loginUser();
+            if(isOnLine()){
+                loginUser();
+            }
+            else{
+                Toast.makeText(MainActivity.this, "No hay conexion de internet", Toast.LENGTH_SHORT).show();
 
+            }
 
         }else{
             Toast.makeText(MainActivity.this, "Complete los campos", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public  boolean isOnLine(){
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo actNetInfo = connectivityManager.getActiveNetworkInfo();
+
+        return (actNetInfo != null && actNetInfo.isConnected());
     }
 
     private void   loginUser(){
@@ -144,8 +166,13 @@ public class MainActivity extends AppCompatActivity {
      * @param v: vista
      */
     public void iniciarsesion(View v){
-        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-        startActivityForResult(signInIntent,GOOGLE_SIGN_IN);
+        if(isOnLine()){
+            Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+            startActivityForResult(signInIntent,GOOGLE_SIGN_IN);
+        }else{
+            Toast.makeText(MainActivity.this, "No hay conexion de internet", Toast.LENGTH_SHORT).show();
+        }
+
 
     }
 
@@ -195,7 +222,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         }else{
-            System.out.println("sin registrarse");
+            //System.out.println("sin registrarse");
         }
 
 
